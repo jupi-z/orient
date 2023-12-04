@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">Prédire</button>
+</form>
+
+<!-- resultat.html -->
+<h2>Résultats des prédictions :</h2>
+<ul>
+  {% for prediction in predictions %}
+    <li>{{ prediction }}</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
