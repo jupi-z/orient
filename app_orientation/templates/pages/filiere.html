@@ -1,0 +1,54 @@
+{% extends 'pages/../base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+  <h1>Filières universitaires au Congo</h1>
+  <p>Explorez les différentes filières universitaires disponibles au Congo :</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{% static 'img/filiere.png' %}" alt="Filière 1" class="img-fluid">
+      <h2>Filière 1</h2>
+      <p>Une description de la filière 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="col-md-4">
+      <img src="{% static 'img/filiere.png' %}" alt="Filière 2" class="img-fluid">
+      <h2>Filière 2</h2>
+      <p>Une description de la filière 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="col-md-4">
+      <img src="{% static 'img/filiere.png' %}" alt="Filière 3" class="img-fluid">
+      <h2>Filière 3</h2>
+      <p>Une description de la filière 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{% static 'img/filiere.png' %}" alt="Filière 4" class="img-fluid">
+      <h2>Filière 4</h2>
+      <p>Une description de la filière 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="col-md-4">
+      <img src="{% static 'img/filiere.png' %}" alt="Filière 5" class="img-fluid">
+      <h2>Filière 5</h2>
+      <p>Une description de la filière 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="col-md-4">
+      <img src="{% static 'img/filiere.png' %}" alt="Filière 6" class="img-fluid">
+      <h2>Filière 6</h2>
+      <p>Une description de la filière 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <!-- Ajoutez plus de filières et de descriptions ici -->
+
+</div>
+
+{% endblock %}
