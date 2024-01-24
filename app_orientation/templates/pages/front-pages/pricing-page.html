@@ -1,0 +1,762 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+    <!-- Sections:Start -->
+
+    <!-- Pricing Plans -->
+    <section class="section-py first-section-pt">
+        <div class="container">
+            <h2 class="text-center mb-2">Plans de tarification</h2>
+            <p class="text-center">
+                Commencez avec nous - c'est parfait pour les individus et les organisations. <br> Choisissez un plan
+                d'abonnement
+                qui répond à vos besoins.
+            </p>
+            <div class="d-flex align-items-center justify-content-center flex-wrap gap-2 pb-5 pt-3 mb-0 mb-md-4">
+                <label class="switch switch-primary ms-3 ms-sm-0 mt-2">
+                    <span class="switch-label">Paiement mensuel</span>
+                    <input type="checkbox" class="switch-input price-duration-toggler" checked/>
+                    <span class="switch-toggle-slider">
+              <span class="switch-on"></span>
+              <span class="switch-off"></span>
+            </span>
+                    <span class="switch-label">Paiement Annuel</span>
+                </label>
+                <div class="mt-n5 ms-n5 d-none d-sm-block">
+                    <i class="ti ti-corner-left-down ti-sm text-muted me-1 scaleX-n1-rtl"></i>
+                    <span class="badge badge-sm bg-label-primary">25% de remise</span>
+                </div>
+            </div>
+
+            <div class="row mx-0 gy-3 px-lg-5">
+                <!-- Basic -->
+                <div class="col-lg mb-md-0 mb-4">
+                    <div class="card border rounded shadow-none">
+                        <div class="card-body">
+                            <div class="my-3 pt-2 text-center">
+                                <img src="{% static 'assets/img/illustrations/page-pricing-basic.png' %}"
+                                     alt="Basic Image"
+                                     height="140"/>
+                            </div>
+                            <h3 class="card-title text-center text-capitalize mb-1">Forfait Personnel</h3>
+                            <p class="text-center">Un début simple pour tout le monde</p>
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary">$</sup>
+                                    <h1 class="display-4 mb-0 text-primary">0</h1>
+                                    <sub class="h6 pricing-duration mt-auto mb-2 text-muted fw-normal">/mois</sub>
+                                </div>
+                                <small class="price-yearly price-yearly-toggle text-muted">$ 0 / An</small>
+                            </div>
+
+                            <ul class="ps-0 my-4 pt-2 circle-bullets">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="ti ti-point ti-lg"></i> Accès à une base de données complète
+                                </li>
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Tests
+                                    d'orientation
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="ti ti-point ti-lg"></i>Suggestions de carrières
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Conseils
+                                    personnalisés
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Ressources
+                                    éducatives
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Accès au
+                                    blog
+                                </li>
+                            </ul>
+                            <a href="payment-page.html" class="btn btn-label-success d-grid w-100">Your Current Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro -->
+                <div class="col-lg mb-md-0 mb-4">
+                    <div class="card border-primary border shadow-none">
+                        <div class="card-body position-relative">
+                            <div class="position-absolute end-0 me-4 top-0 mt-4">
+                                <span class="badge bg-label-primary">Popular</span>
+                            </div>
+                            <div class="my-3 pt-2 text-center">
+                                <img
+                                        src="{% static 'assets/img/illustrations/page-pricing-standard.png' %}"
+                                        alt="Standard Image"
+                                        height="140"/>
+                            </div>
+                            <h3 class="card-title text-center text-capitalize mb-1">Forfait Formateur</h3>
+                            <p class="text-center">Pour les centres de formation</p>
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary">$</sup>
+                                    <h1 class="price-toggle price-yearly display-4 text-primary mb-0">37,5</h1>
+                                    <h1 class="price-toggle price-monthly display-4 text-primary mb-0 d-none">50</h1>
+                                    <sub class="h6 text-muted pricing-duration mt-auto mb-2 fw-normal">/mois</sub>
+                                </div>
+                                <small class="price-yearly price-yearly-toggle text-muted">$ 450 / An</small>
+                            </div>
+
+                            <ul class="ps-0 my-4 pt-2 circle-bullets">
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Toutes les
+                                    fonctionnalités du forfait Personnel
+                                </li>
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i> Création de
+                                    profils d'étudiants
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="ti ti-point ti-lg"></i>Gestion des sessions des formations
+                                </li>
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Suivi des
+                                    statistiques et performances
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Création de
+                                    quiz et évaluations
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Communication
+                                    directe avec les étudiants
+                                </li>
+                            </ul>
+
+                            <a href="payment-page.html" class="btn btn-primary d-grid w-100">Upgrade</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="col-lg">
+                    <div class="card border rounded shadow-none">
+                        <div class="card-body">
+                            <div class="my-3 pt-2 text-center">
+                                <img
+                                        src="{% static 'assets/img/illustrations/page-pricing-enterprise.png' %}"
+                                        alt="Enterprise Image"
+                                        height="140"/>
+                            </div>
+                            <h3 class="card-title text-center text-capitalize mb-1">Forfait Ecole / Université</h3>
+                            <p class="text-center">Pour les institutions scolaires et universitaires</p>
+
+                            <div class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <sup class="h6 text-primary pricing-currency mt-3 mb-0 me-1">$</sup>
+                                    <h1 class="price-toggle price-yearly display-4 text-primary mb-0">112,5</h1>
+                                    <h1 class="price-toggle price-monthly display-4 text-primary mb-0 d-none">150</h1>
+                                    <sub class="h6 pricing-duration mt-auto mb-2 fw-normal text-muted">/mois</sub>
+                                </div>
+                                <small class="price-yearly price-yearly-toggle text-muted">$ 1350 / An</small>
+                            </div>
+
+                            <ul class="ps-0 my-4 pt-2 circle-bullets">
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Toutes les
+                                    fonctionnalités du forfait Formateur
+                                </li>
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Gestion des
+                                    programmes d'études et cursus
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="ti ti-point ti-lg"></i>Suivi des diplômes et certifications
+                                </li>
+                                <li class="mb-2 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Gestion des
+                                    stages et opportunités de carrière
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Intégration
+                                    avec des systèmes tiers
+                                </li>
+                                <li class="mb-0 d-flex align-items-center"><i class="ti ti-point ti-lg"></i>Support
+                                    technique prioritaire
+                                </li>
+                            </ul>
+
+                            <a href="payment-page.html" class="btn btn-label-primary d-grid w-100">Upgrade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Pricing Plans -->
+
+    <!-- Pricing Free Trial -->
+    <section class="pricing-free-trial bg-label-primary">
+        <div class="container">
+            <div class="position-relative">
+                <div class="d-flex justify-content-between flex-column-reverse flex-lg-row align-items-center py-4 px-5">
+                    <div class="text-center text-lg-start mt-2 ms-3">
+                        <h3 class="text-primary mb-1">Pas encore convaincu ? <br>Commencez par un essai GRATUIT de 14
+                            jours
+                            !</h3>
+                        <p class="text-body mb-1">Vous aurez un accès complet à toutes les fonctionnalités pendant 14
+                            jours.</p>
+                        <a href="payment-page.html" class="btn btn-primary mt-4 mb-2">Commencer l'essai GRATUIT </a>
+                    </div>
+                    <!-- image -->
+                    <div class="text-center">
+                        <img
+                                src="{% static 'assets/img/illustrations/girl-with-laptop.png' %}"
+                                class="img-fluid me-lg-5 pe-lg-1 mb-3 mb-lg-0"
+                                alt="Image de clé API"
+                                width="202"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Pricing Free Trial -->
+
+    <!-- Plans Comparison -->
+    <section class="section-py pricing-plans-comparison">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="mb-2">Choisissez le plan qui vous convient le mieux</h2>
+                    <p class="mb-1">Restez cool, nous avons une garantie de remboursement de 48 heures !</p>
+                </div>
+            </div>
+            <div class="row mx-4">
+                <div class="col-12">
+                    <div class="table-responsive border rounded">
+                        <table class="table table-striped text-center mb-0">
+                            <thead>
+                            <tr>
+                                <th scope="col">
+                                    <p class="mb-1">Fonctionnalités</p>
+                                    <small class="text-muted fw-normal text-capitalize">Fonctionnalités natives</small>
+                                </th>
+                                <th scope="col">
+                                    <p class="mb-1">Personnel</p>
+                                    <small class="text-muted fw-normal text-capitalize">Gratuit</small>
+                                </th>
+                                <th scope="col">
+                                    <p class="mb-1 position-relative">
+                                        Formateur
+                                        <span class="badge badge-center rounded-pill bg-primary position-absolute mt-n2 ms-1"
+                                        ><i class="ti ti-star"></i
+                                        ></span>
+                                    </p>
+                                    <small class="text-muted fw-normal text-capitalize">$50/mois</small>
+                                </th>
+                                <th scope="col">
+                                    <p class="mb-1">Ecoles / universités</p>
+                                    <small class="text-muted fw-normal text-capitalize">$150/mois</small>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>14-jours gratuit</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Évaluation interactive des forces et atouts</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Recommandations personnalisées</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Chat avec conseillers</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Base de données métiers</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Suivi des intérêts et compétences</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ressources pour entretiens</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Profils de formateurs</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Séances de coaching</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Outils d'évaluation et suivi</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Partage de ressources</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ateliers et webinaires</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Conseils d'orientation</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Profils d'établissements</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Offres de stages/emplois</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Filtrage des candidats</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Suivi de l'adéquation</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Journées portes ouvertes</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Statistiques des anciens</td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary">
+                        <i class="ti ti-x"></i>
+                      </span>
+                                </td>
+                                <td>
+                      <span class="badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary">
+                        <i class="ti ti-check"></i>
+                      </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a href="payment-page.html" class="btn text-nowrap btn-label-primary">Choisir ce
+                                        plan</a>
+                                </td>
+                                <td>
+                                    <a href="payment-page.html" class="btn text-nowrap btn-primary">Choisir ce plan</a>
+                                </td>
+                                <td>
+                                    <a href="payment-page.html" class="btn text-nowrap btn-label-primary">Choisir ce
+                                        plan</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Plans Comparison -->
+    <!-- FAQS -->
+    <section class="section-py pricing-faqs rounded-bottom bg-body">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">FAQ</span>
+            </div>
+            <h3 class="text-center mb-1">Questions fréquemment <span class="section-title">posées</span></h3>
+            <p class="text-center mb-5 pb-3">Parcourez ces FAQ pour trouver des réponses aux questions couramment
+                posées.</p>
+            <div class="row gy-5">
+
+                <div id="faq" class="accordion accordion-without-arrow">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card accordion-item active">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionOne" aria-expanded="true"
+                                        aria-controls="accordionOne">
+                                    Est-ce que vous facturez pour chaque mise à niveau ?
+                                </button>
+                            </h2>
+
+                            <div id="accordionOne" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Bonbons au citron, gâteau au chocolat, bonbons gélifiés, gâteau aux carottes,
+                                    muffin. Snaps de sésame,
+                                    glaçage, massepain, oursons gélifiés, macaron, dragée, danoises, caramels en
+                                    poudre. Bear claw dragée
+                                    pâtisserie, garniture de soufflé. Gaufrette, oursons gélifiés, guimauve,
+                                    pâtisserie, tarte.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionTwo" aria-expanded="false"
+                                        aria-controls="accordionTwo">
+                                    Est-ce que j'ai besoin d'acheter une licence pour chaque site web ?
+                                </button>
+                            </h2>
+                            <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Dessert, crème glacée, beignet, gâteau à l'avoine, gelée, tarte aux prunes
+                                    sucrée, cheesecake. Bear claw dragée, avoine,
+                                    gâteau, tarte, macaron, beignet, bonbons gélifiés. Haricots de gelée, cannes en
+                                    sucre, gâteau aux carottes. Fruitcake,
+                                    chocolat, chupa chups.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionThree" aria-expanded="false"
+                                        aria-controls="accordionThree">
+                                    Qu'est-ce qu'une licence régulière ?
+                                </button>
+                            </h2>
+                            <div id="accordionThree" class="accordion-collapse collapse"
+                                 aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Une licence régulière peut être utilisée pour des produits finaux pour lesquels
+                                    les utilisateurs n'ont pas à payer pour l'accès ou
+                                    le service (l'accès est gratuit et il n'y aura pas de frais d'abonnement
+                                    mensuel). Une seule licence régulière peut être utilisée pour
+                                    un seul produit final et ce produit final peut être utilisé par vous ou votre
+                                    client. Si vous souhaitez vendre le produit final à plusieurs
+                                    clients, vous devrez acheter une licence séparée pour chaque client. La même
+                                    règle s'applique si vous souhaitez utiliser le même produit final
+                                    sur plusieurs domaines (configuration unique). Pour plus d'informations sur la
+                                    licence régulière, vous pouvez consulter la description officielle.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionFour" aria-expanded="false"
+                                        aria-controls="accordionFour">
+                                    Qu'est-ce qu'une licence étendue ?
+                                </button>
+                            </h2>
+                            <div id="accordionFour" class="accordion-collapse collapse"
+                                 aria-labelledby="headingFour"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et aliquid
+                                    quaerat
+                                    possimus maxime! Mollitia reprehenderit neque repellat deleniti delectus
+                                    architecto
+                                    dolorum maxime, blanditiis earum ea, incidunt quam possimus cumque.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionFive" aria-expanded="false"
+                                        aria-controls="accordionFive">
+                                    Quelle licence s'applique aux applications SASS ?
+                                </button>
+                            </h2>
+                            <div id="accordionFive" class="accordion-collapse collapse"
+                                 aria-labelledby="headingFive"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi molestias
+                                    exercitationem ab
+                                    cum nemo facere voluptates veritatis quia, eveniet veniam at et repudiandae
+                                    mollitia
+                                    ipsam quasi labore enim architecto non!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ FAQS -->
+
+    <!-- / Sections:End -->
+
+{% endblock %}

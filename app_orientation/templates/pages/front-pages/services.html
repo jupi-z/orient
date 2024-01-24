@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+    <!-- Useful features: Start -->
+    <section id="landingFeatures" class="section-py landing-features">
+        <div class="container">
+            <h3 class="text-center mb-1">
+                <span class="section-title">Tout ce dont vous avez besoin</span> pour orienter vos études ainsi que
+                votre carrière
+            </h3>
+            <p class="text-center mb-3 mb-md-5 pb-3">
+                Orient vous permet d'avoir une vue d'ensemble sur les probabilitées d'avenir qui s'ouvrent à vous
+                <br>et
+                vous aider à faire un choix des plus optimal.
+            </p>
+            <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img src="{% static 'assets/img/front-pages/icons/laptop.png' %}" alt="laptop charging"/>
+                    </div>
+                    <h5 class="mb-3">Systeme de Recommandation Intelligent</h5>
+                    <p class="features-icon-description">
+                        Analyse des données des étudiants pour des recommandations personnalisées basées sur leurs
+                        compétences, intérêts et opportunités du marché du travail.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img src="{% static 'assets/img/front-pages/icons/rocket.png' %}" alt="transition up"/>
+                    </div>
+                    <h5 class="mb-3">Programme de Coaching en ligne</h5>
+                    <p class="features-icon-description">
+                        Connexion des étudiants avec des mentors qualifiés pour des conseils personnalisés et des
+                        retours d'expérience.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img src="{% static 'assets/img/front-pages/icons/paper.png' %}" alt="edit"/>
+                    </div>
+                    <h5 class="mb-3">Kits d'Exploration Virtuels</h5>
+                    <p class="features-icon-description">
+                        Accès à des ressources en ligne, tutoriels interactifs et projets pratiques pour explorer
+                        différents domaines d'études et développer des compétences.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img src="{% static 'assets/img/front-pages/icons/check.png' %}" alt="3d select solid"/>
+                    </div>
+                    <h5 class="mb-3">Integration des APIs en Temps Réel</h5>
+                    <p class="features-icon-description">
+                        Fourniture d'informations actualisées sur les offres d'emploi, les tendances du marché du
+                        travail et les compétences les plus demandées.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img src="{% static 'assets/img/front-pages/icons/user.png' %}" alt="lifebelt"/>
+                    </div>
+                    <h5 class="mb-3">Profil Personnalisés et Reseautage</h5>
+                    <p class="features-icon-description"> Création de profils détaillés mettant en valeur les
+                        compétences, expériences et aspirations professionnelles des étudiants, facilitant le
+                        réseautage avec d'autres étudiants et professionnels.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img src="{% static 'assets/img/front-pages/icons/keyboard.png' %}" alt="google docs"/>
+                    </div>
+                    <h5 class="mb-3">Bibliothèque de Ressources</h5>
+                    <p class="features-icon-description">Accès à une variété de ressources telles que guides,
+                        vidéos, études de cas, webinaires et témoignages d'anciens étudiants pour explorer les
+                        filières et obtenir des informations pertinentes sur les choix de carrière.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="landingFAQ" class="section-py bg-body landing-faq">
+        <div class="container">
+            <div class="row">
+                <div class="hero-text-box text-center">
+                    <h1 class="text-primary hero-title display-6 fw-bold">Informations détaillées <br>sur nos services</h1>
+                    <p class="lead">Dans cette section, nous souhaitons vous fournir des détails supplémentaires sur les
+                        services que nous proposons afin de vous aider à mieux comprendre notre offre.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Orientation professionnelle et de carrière</h3>
+                    <p>Nous comprenons l'importance de faire des choix éclairés pour votre avenir professionnel. Notre
+                        équipe d'experts est là pour vous guider dans votre parcours et vous aider à prendre des
+                        décisions optimales.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Système de recommandation intelligent</h3>
+                    <p>Notre système de recommandation utilise des algorithmes avancés pour analyser vos données et vous
+                        fournir des suggestions personnalisées. Grâce à cette fonctionnalité, vous pouvez obtenir une
+                        vue d'ensemble des opportunités qui s'offrent à vous et prendre des décisions éclairées.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Services d'analyse</h3>
+                    <p>Nous proposons également des services d'analyse approfondie pour vous aider à mieux comprendre
+                        vos options. Nos experts peuvent vous fournir des informations détaillées sur différents
+                        domaines, vous aider à évaluer les avantages et les inconvénients de chaque option, et vous
+                        guider dans votre prise de décision.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Contactez-nous</h3>
+                    <p>Nous sommes déterminés à offrir un service de qualité, personnalisé et adapté à vos besoins
+                        spécifiques. Notre équipe est là pour vous fournir les informations dont vous avez besoin et
+                        vous accompagner tout au long de votre parcours. N'hésitez pas à nous contacter par email ou à
+                        nous appeler pour obtenir des conseils personnalisés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Useful features: End -->
+
+{% endblock %}
