@@ -3,27 +3,37 @@
     {% load static %}
 
     {% block content %}
-        <section id="about" class="section-py bg-body">
-            <div class="container">
-                <div class="hero-text-box text-center">
-                    <h1 class="text-primary hero-title display-6 fw-bold">À Propos de nous</h1>
-                    <h5>
-                        Qui sommes-nous ? <br
-                            class="d-none d-lg-block"/>
-                    </h5>
+        <div data-bs-spy="scroll" class="scrollspy-example">
+        <!-- Hero: Start -->
+        <section id="hero-animation">
+            <div id="landingHero" class="section-py landing-hero position-relative">
+                <div class="container">
+                    <div class="hero-text-box text-center">
+                        <h1 class="text-primary hero-title display-6 fw-bold">À Propos de nous</h1>
+                        <h2>
+                            Qui sommes-nous ?<br
+                                class="d-none d-lg-block"/>
+                        </h2>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <!-- Hero: End -->
+
+        <section id="landingFeatures" class="section-py landing-features">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Orient - Votre partenaire pour l'orientation scolaire et professionnelle</h3>
                         <p>Nous sommes une plateforme d'orientation scolaire et professionnelle dédiée à aider les
-                            étudiants et les professionnels à trouver leur voie [doc_2]. Notre équipe d'experts
+                            étudiants et les professionnels à trouver leur voie. Notre équipe d'experts
                             passionnés est là pour vous accompagner dans votre parcours et vous fournir une variété
                             d'outils et de ressources pour vous aider à prendre des décisions éclairées.</p>
                     </div>
                     <div class="col-md-6">
                         <h3>Notre mission</h3>
                         <p>Notre mission est de simplifier le processus d'orientation en fournissant un système de
-                            recommandation intelligent [doc_1]. Grâce à notre technologie avancée d'analyse, nous vous
+                            recommandation intelligent. Grâce à notre technologie avancée d'analyse, nous vous
                             offrons une vue d'ensemble sur les probabilités d'avenir qui s'ouvrent à vous et vous aidons
                             à faire un choix optimal.</p>
                     </div>
@@ -32,16 +42,16 @@
                     <div class="col-md-6">
                         <h3>Notre engagement envers vous</h3>
                         <p>Nous nous engageons à vous offrir des conseils personnalisés, des ressources éducatives et un
-                            accès à notre blog pour vous tenir informé des dernières tendances [doc_5]. Nous voulons
+                            accès à notre blog pour vous tenir informé des dernières tendances. Nous voulons
                             être votre partenaire tout au long de votre parcours d'orientation scolaire ou
-                            professionnelle [doc_2]. N'hésitez pas à nous contacter par email ou à nous appeler pour
+                            professionnelle. N'hésitez pas à nous contacter par email ou à nous appeler pour
                             obtenir l'aide dont vous avez besoin.</p>
                     </div>
                     <div class="col-md-6">
                         <h3>Plans de tarification</h3>
                         <p>Nous proposons différents plans de tarification pour répondre à vos besoins spécifiques. Que
-                            vous soyez un individu ou une organisation, nous avons un plan d'abonnement adapté pour vous
-                            [doc_4]. Vous pouvez choisir entre un paiement mensuel ou annuel, avec une remise de 25%
+                            vous soyez un individu ou une organisation, nous avons un plan d'abonnement adapté pour
+                            vous. Vous pouvez choisir entre un paiement mensuel ou annuel, avec une remise de 25%
                             pour le paiement annuel.</p>
                     </div>
                 </div>

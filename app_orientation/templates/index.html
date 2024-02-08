@@ -2,20 +2,20 @@
 {% load static %}
 
 {% block content %}
-    <!-- Sections:Start -->
+<!-- Sections:Start -->
 
-    <div data-bs-spy="scroll" class="scrollspy-example">
-        <!-- Hero: Start -->
-        <section id="hero-animation">
-            <div id="landingHero" class="section-py landing-hero position-relative">
-                <div class="container">
-                    <div class="hero-text-box text-center">
-                        <h1 class="text-primary hero-title display-6 fw-bold">Orient, La plate-forme idéal</h1>
-                        <h2>
-                            pour vous aider à orienter vos études ainsi que votre carrière <br
-                                class="d-none d-lg-block"/>
-                        </h2>
-                        <div class="landing-hero-btn d-inline-block position-relative">
+<div data-bs-spy="scroll" class="scrollspy-example">
+    <!-- Hero: Start -->
+    <section id="hero-animation">
+        <div id="landingHero" class="section-py landing-hero position-relative">
+            <div class="container">
+                <div class="hero-text-box text-center">
+                    <h1 class="text-primary hero-title display-6 fw-bold">Orient, La plate-forme idéal</h1>
+                    <h2>
+                        pour vous aider à orienter vos études ainsi que votre carrière <br
+                            class="d-none d-lg-block"/>
+                    </h2>
+                    <div class="landing-hero-btn d-inline-block position-relative">
                 <span class="hero-btn-item position-absolute d-none d-md-flex text-heading"
                 >Devenez nôtre
                   <img
@@ -23,1052 +23,1055 @@
                           alt="Join community arrow"
                           class="scaleX-n1-rtl"
                   /></span>
-                            <a href="#landingPricing" class="btn btn-primary btn-lg">Rejoignez-Nous</a>
-                        </div>
+                        <a href="#landingPricing" class="btn btn-primary btn-lg">Rejoignez-Nous</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Hero: End -->
+        </div>
+    </section>
+    <!-- Hero: End -->
 
-        <!-- Useful features: Start -->
-        <section id="landingFeatures" class="section-py landing-features">
-            <div class="container">
-                <div class="text-center mb-3 pb-1">
-                    <span class="badge bg-label-primary">Fonctionnalités</span>
-                </div>
-                <h3 class="text-center mb-1">
-                    <span class="section-title">Tout ce dont vous avez besoin</span> pour orienter vos études ainsi que
-                    votre carrière
-                </h3>
-                <p class="text-center mb-3 mb-md-5 pb-3">
-                    Orient vous permet d'avoir une vue d'ensemble sur les probabilitées d'avenir qui s'ouvrent à vous
-                    <br>et
-                    vous aider à faire un choix des plus optimal.
-                </p>
-                <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
-                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
-                        <div class="text-center mb-3">
-                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/laptop.png' %}"
-                                             alt="laptop charging"/></a>
-                        </div>
-                        <h5 class="mb-3">Systeme de Recommandation Intelligent</h5>
-                        <p class="features-icon-description">
-                            Analyse des données des étudiants pour des recommandations personnalisées basées sur leurs
-                            compétences, intérêts et opportunités du marché du travail.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
-                        <div class="text-center mb-3">
-                            <a href=""><img src="{% static 'assets/img/front-pages/icons/rocket.png' %}" alt="transition up"/></a>
-                        </div>
-                        <h5 class="mb-3">Programme de Coaching en ligne</h5>
-                        <p class="features-icon-description">
-                            Connexion des étudiants avec des mentors qualifiés pour des conseils personnalisés et des
-                            retours d'expérience.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
-                        <div class="text-center mb-3">
-                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/paper.png' %}" alt="edit"/></a>
-                        </div>
-                        <h5 class="mb-3">Kits d'Exploration Virtuels</h5>
-                        <p class="features-icon-description">
-                            Accès à des ressources en ligne, tutoriels interactifs et projets pratiques pour explorer
-                            différents domaines d'études et développer des compétences.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
-                        <div class="text-center mb-3">
-                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/check.png' %}" alt="3d select solid"/></a>
-                        </div>
-                        <h5 class="mb-3">Integration des APIs en Temps Réel</h5>
-                        <p class="features-icon-description">
-                            Fourniture d'informations actualisées sur les offres d'emploi, les tendances du marché du
-                            travail et les compétences les plus demandées.
-                        </p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
-                        <div class="text-center mb-3">
-                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/user.png' %}" alt="lifebelt"/></a>
-                        </div>
-                        <h5 class="mb-3">Profil Personnalisés et Reseautage</h5>
-                        <p class="features-icon-description"> Création de profils détaillés mettant en valeur les
-                            compétences, expériences et aspirations professionnelles des étudiants, facilitant le
-                            réseautage avec d'autres étudiants et professionnels.</p>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
-                        <div class="text-center mb-3">
-                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/keyboard.png' %}" alt="google docs"/></a>
-                        </div>
-                        <h5 class="mb-3">Bibliothèque de Ressources</h5>
-                        <p class="features-icon-description">Accès à une variété de ressources telles que guides,
-                            vidéos, études de cas, webinaires et témoignages d'anciens étudiants pour explorer les
-                            filières et obtenir des informations pertinentes sur les choix de carrière.</p>
-                    </div>
-
-                </div>
+    <!-- Useful features: Start -->
+    <section id="landingFeatures" class="section-py landing-features">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">Fonctionnalités</span>
             </div>
-        </section>
-        <!-- Useful features: End -->
-
-        <!-- Real customers reviews: Start -->
-        <section id="landingReviews" class="section-py bg-body landing-reviews pb-0">
-            <!-- What people say slider: Start -->
-            <div class="container">
-                <div class="row align-items-center gx-0 gy-4 g-lg-5">
-                    <div class="col-md-6 col-lg-5 col-xl-3">
-                        <div class="mb-3 pb-1">
-                            <span class="badge bg-label-primary">Avis de vrais clients</span>
-                        </div>
-                        <h3 class="mb-1"><span class="section-title">Ce que disent les gens</span></h3>
-                        <p class="mb-3 mb-md-5">
-                            Découvrez ce que nos clients ont à dire<br class="d-none d-xl-block"/>
-                            sur leur expérience.
-                        </p>
-                        <div class="landing-reviews-btns">
-                            <button
-                                    id="reviews-previous-btn"
-                                    class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
-                                    type="button">
-                                <i class="ti ti-chevron-left ti-sm"></i>
-                            </button>
-                            <button id="reviews-next-btn" class="btn btn-label-primary reviews-btn scaleX-n1-rtl"
-                                    type="button">
-                                <i class="ti ti-chevron-right ti-sm"></i>
-                            </button>
-                        </div>
+            <h3 class="text-center mb-1">
+                <span class="section-title">Tout ce dont vous avez bes oin</span> pour orienter vos études ainsi que
+                votre carrière
+            </h3>
+            <p class="text-center mb-3 mb-md-5 pb-3">
+                Orient vous permet d'avoir une vue d'ensemble sur les probabilitées d'avenir qui s'ouvrent à vous
+                <br>et
+                vous aider à faire un choix des plus optimal.
+            </p>
+            <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/laptop.png' %}"
+                                         alt="laptop charging"/></a>
                     </div>
-                    <div class="col-md-6 col-lg-7 col-xl-9">
-                        <div class="swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3">
-                            <div class="swiper" id="swiper-reviews">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img
-                                                            src="{% static 'assets/img/front-pages/branding/logo-1.png' %}"
-                                                            alt="client logo"
-                                                            class="client-logo img-fluid"/>
-                                                </div>
-                                                <p>
-                                                    “Vuexy is hands down the most useful front end Bootstrap theme I've
-                                                    ever used. I can't wait
-                                                    to use it again for my next project.”
-                                                </p>
-                                                <div class="text-warning mb-3">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="{% static 'assets/img/avatars/1.png' %}" alt="Avatar"
-                                                             class="rounded-circle"/>
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Cecilia Payne</h6>
-                                                        <p class="small text-muted mb-0">CEO of Airbnb</p>
-                                                    </div>
-                                                </div>
+                    <h5 class="mb-3">Systeme de Recommandation Intelligent</h5>
+                    <p class="features-icon-description">
+                        Analyse des données des étudiants pour des recommandations personnalisées basées sur leurs
+                        compétences, intérêts et opportunités du marché du travail.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/rocket.png' %}"
+                                         alt="transition up"/></a>
+                    </div>
+                    <h5 class="mb-3">Programme de Coaching en ligne</h5>
+                    <p class="features-icon-description">
+                        Connexion des étudiants avec des mentors qualifiés pour des conseils personnalisés et des
+                        retours d'expérience.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/paper.png' %}" alt="edit"/></a>
+                    </div>
+                    <h5 class="mb-3">Kits d'Exploration Virtuels</h5>
+                    <p class="features-icon-description">
+                        Accès à des ressources en ligne, tutoriels interactifs et projets pratiques pour explorer
+                        différents domaines d'études et développer des compétences.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/check.png' %}"
+                                         alt="3d select solid"/></a>
+                    </div>
+                    <h5 class="mb-3">Integration des APIs en Temps Réel</h5>
+                    <p class="features-icon-description">
+                        Fourniture d'informations actualisées sur les offres d'emploi, les tendances du marché du
+                        travail et les compétences les plus demandées.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/user.png' %}" alt="lifebelt"/></a>
+                    </div>
+                    <h5 class="mb-3">Profil Personnalisés et Reseautage</h5>
+                    <p class="features-icon-description"> Création de profils détaillés mettant en valeur les
+                        compétences, expériences et aspirations professionnelles des étudiants, facilitant le
+                        réseautage avec d'autres étudiants et professionnels.</p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/keyboard.png' %}"
+                                         alt="google docs"/></a>
+                    </div>
+                    <h5 class="mb-3">Bibliothèque de Ressources</h5>
+                    <p class="features-icon-description">Accès à une variété de ressources telles que guides,
+                        vidéos, études de cas, webinaires et témoignages d'anciens étudiants pour explorer les
+                        filières et obtenir des informations pertinentes sur les choix de carrière.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Useful features: End -->
+
+    <!-- Real customers reviews: Start -->
+    <section id="landingReviews" class="section-py bg-body landing-reviews pb-0">
+        <!-- What people say slider: Start -->
+        <div class="container">
+            <div class="row align-items-center gx-0 gy-4 g-lg-5">
+                <div class="col-md-6 col-lg-5 col-xl-3">
+                    <div class="mb-3 pb-1">
+                        <span class="badge bg-label-primary">Avis de vrais clients</span>
+                    </div>
+                    <h3 class="mb-1"><span class="section-title">Ce que disent les gens</span></h3>
+                    <p class="mb-3 mb-md-5">
+                        Découvrez ce que nos clients ont à dire<br class="d-none d-xl-block"/>
+                        sur leur expérience.
+                    </p>
+                    <div class="landing-reviews-btns">
+                        <button
+                                id="reviews-previous-btn"
+                                class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
+                                type="button">
+                            <i class="ti ti-chevron-left ti-sm"></i>
+                        </button>
+                        <button id="reviews-next-btn" class="btn btn-label-primary reviews-btn scaleX-n1-rtl"
+                                type="button">
+                            <i class="ti ti-chevron-right ti-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-9">
+                    <div class="swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3">
+                        <div class="swiper" id="swiper-reviews">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img
+                                                        src="{% static 'assets/img/front-pages/branding/logo-1.png' %}"
+                                                        alt="client logo"
+                                                        class="client-logo img-fluid"/>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img
-                                                            src="{% static 'assets/img/front-pages/branding/logo-2.png' %}"
-                                                            alt="client logo"
-                                                            class="client-logo img-fluid"/>
-                                                </div>
-                                                <p>
-                                                    “I've never used a theme as versatile and flexible as Vuexy. It's my
-                                                    go to for building
-                                                    dashboard sites on almost any project.”
-                                                </p>
-                                                <div class="text-warning mb-3">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="{% static 'assets/img/avatars/2.png' %}" alt="Avatar"
-                                                             class="rounded-circle"/>
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Eugenia Moore</h6>
-                                                        <p class="small text-muted mb-0">Founder of Hubspot</p>
-                                                    </div>
-                                                </div>
+                                            <p>
+                                                “Vuexy is hands down the most useful front end Bootstrap theme I've
+                                                ever used. I can't wait
+                                                to use it again for my next project.”
+                                            </p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img
-                                                            src="{% static 'assets/img/front-pages/branding/logo-3.png' %}"
-                                                            alt="client logo"
-                                                            class="client-logo img-fluid"/>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img src="{% static 'assets/img/avatars/1.png' %}" alt="Avatar"
+                                                         class="rounded-circle"/>
                                                 </div>
-                                                <p>
-                                                    This template is really clean & well documented. The docs are really
-                                                    easy to understand and
-                                                    it's always easy to find a screenshot from their website.
-                                                </p>
-                                                <div class="text-warning mb-3">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="{% static 'assets/img/avatars/3.png' %}" alt="Avatar"
-                                                             class="rounded-circle"/>
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Curtis Fletcher</h6>
-                                                        <p class="small text-muted mb-0">Design Lead at Dribbble</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img
-                                                            src="{% static 'assets/img/front-pages/branding/logo-4.png' %}"
-                                                            alt="client logo"
-                                                            class="client-logo img-fluid"/>
-                                                </div>
-                                                <p>
-                                                    All the requirements for developers have been taken into
-                                                    consideration, so I’m able to build
-                                                    any interface I want.
-                                                </p>
-                                                <div class="text-warning mb-3">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="{% static 'assets/img/avatars/4.png' %}" alt="Avatar"
-                                                             class="rounded-circle"/>
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Sara Smith</h6>
-                                                        <p class="small text-muted mb-0">Founder of Continental</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img
-                                                            src="{% static 'assets/img/front-pages/branding/logo-5.png' %}"
-                                                            alt="client logo"
-                                                            class="client-logo img-fluid"/>
-                                                </div>
-                                                <p>
-                                                    “I've never used a theme as versatile and flexible as Vuexy. It's my
-                                                    go to for building
-                                                    dashboard sites on almost any project.”
-                                                </p>
-                                                <div class="text-warning mb-3">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="{% static 'assets/img/avatars/5.png' %}" alt="Avatar"
-                                                             class="rounded-circle"/>
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Eugenia Moore</h6>
-                                                        <p class="small text-muted mb-0">Founder of Hubspot</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card h-100">
-                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
-                                                <div class="mb-3">
-                                                    <img
-                                                            src="{% static 'assets/img/front-pages/branding/logo-6.png' %}"
-                                                            alt="client logo"
-                                                            class="client-logo img-fluid"/>
-                                                </div>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo
-                                                    mollitia, ad eum
-                                                    officia numquam nostrum repellendus consequuntur!
-                                                </p>
-                                                <div class="text-warning mb-3">
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star-filled ti-sm"></i>
-                                                    <i class="ti ti-star ti-sm"></i>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="avatar me-2 avatar-sm">
-                                                        <img src="{% static 'assets/img/avatars/1.png' %}" alt="Avatar"
-                                                             class="rounded-circle"/>
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-0">Sara Smith</h6>
-                                                        <p class="small text-muted mb-0">Founder of Continental</p>
-                                                    </div>
+                                                <div>
+                                                    <h6 class="mb-0">Cecilia Payne</h6>
+                                                    <p class="small text-muted mb-0">CEO of Airbnb</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img
+                                                        src="{% static 'assets/img/front-pages/branding/logo-2.png' %}"
+                                                        alt="client logo"
+                                                        class="client-logo img-fluid"/>
+                                            </div>
+                                            <p>
+                                                “I've never used a theme as versatile and flexible as Vuexy. It's my
+                                                go to for building
+                                                dashboard sites on almost any project.”
+                                            </p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img src="{% static 'assets/img/avatars/2.png' %}" alt="Avatar"
+                                                         class="rounded-circle"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Eugenia Moore</h6>
+                                                    <p class="small text-muted mb-0">Founder of Hubspot</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img
+                                                        src="{% static 'assets/img/front-pages/branding/logo-3.png' %}"
+                                                        alt="client logo"
+                                                        class="client-logo img-fluid"/>
+                                            </div>
+                                            <p>
+                                                This template is really clean & well documented. The docs are really
+                                                easy to understand and
+                                                it's always easy to find a screenshot from their website.
+                                            </p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img src="{% static 'assets/img/avatars/3.png' %}" alt="Avatar"
+                                                         class="rounded-circle"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Curtis Fletcher</h6>
+                                                    <p class="small text-muted mb-0">Design Lead at Dribbble</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img
+                                                        src="{% static 'assets/img/front-pages/branding/logo-4.png' %}"
+                                                        alt="client logo"
+                                                        class="client-logo img-fluid"/>
+                                            </div>
+                                            <p>
+                                                All the requirements for developers have been taken into
+                                                consideration, so I’m able to build
+                                                any interface I want.
+                                            </p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img src="{% static 'assets/img/avatars/4.png' %}" alt="Avatar"
+                                                         class="rounded-circle"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Sara Smith</h6>
+                                                    <p class="small text-muted mb-0">Founder of Continental</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img
+                                                        src="{% static 'assets/img/front-pages/branding/logo-5.png' %}"
+                                                        alt="client logo"
+                                                        class="client-logo img-fluid"/>
+                                            </div>
+                                            <p>
+                                                “I've never used a theme as versatile and flexible as Vuexy. It's my
+                                                go to for building
+                                                dashboard sites on almost any project.”
+                                            </p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img src="{% static 'assets/img/avatars/5.png' %}" alt="Avatar"
+                                                         class="rounded-circle"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Eugenia Moore</h6>
+                                                    <p class="small text-muted mb-0">Founder of Hubspot</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img
+                                                        src="{% static 'assets/img/front-pages/branding/logo-6.png' %}"
+                                                        alt="client logo"
+                                                        class="client-logo img-fluid"/>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo
+                                                mollitia, ad eum
+                                                officia numquam nostrum repellendus consequuntur!
+                                            </p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img src="{% static 'assets/img/avatars/1.png' %}" alt="Avatar"
+                                                         class="rounded-circle"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">Sara Smith</h6>
+                                                    <p class="small text-muted mb-0">Founder of Continental</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- What people say slider: End -->
-            <hr class="m-0"/>
-            <!-- Logo slider: Start -->
-            <div class="container">
-                <div class="swiper-logo-carousel py-4 my-lg-2">
-                    <div class="swiper" id="swiper-clients-logos">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img
-                                        src="{% static 'assets/img/front-pages/branding/logo_1-light.png' %}"
-                                        alt="client logo"
-                                        class="client-logo"
-                                        data-app-light-img="front-pages/branding/logo_1-light.png"
-                                        data-app-dark-img="front-pages/branding/logo_1-dark.png"/>
-                            </div>
-                            <div class="swiper-slide">
-                                <img
-                                        src="{% static 'assets/img/front-pages/branding/logo_2-light.png' %}"
-                                        alt="client logo"
-                                        class="client-logo"
-                                        data-app-light-img="front-pages/branding/logo_2-light.png"
-                                        data-app-dark-img="front-pages/branding/logo_2-dark.png"/>
-                            </div>
-                            <div class="swiper-slide">
-                                <img
-                                        src="{% static 'assets/img/front-pages/branding/logo_3-light.png' %}"
-                                        alt="client logo"
-                                        class="client-logo"
-                                        data-app-light-img="front-pages/branding/logo_3-light.png"
-                                        data-app-dark-img="front-pages/branding/logo_3-dark.png"/>
-                            </div>
-                            <div class="swiper-slide">
-                                <img
-                                        src="{% static 'assets/img/front-pages/branding/logo_4-light.png' %}"
-                                        alt="client logo"
-                                        class="client-logo"
-                                        data-app-light-img="front-pages/branding/logo_4-light.png"
-                                        data-app-dark-img="front-pages/branding/logo_4-dark.png"/>
-                            </div>
-                            <div class="swiper-slide">
-                                <img
-                                        src="{% static 'assets/img/front-pages/branding/logo_5-light.png' %}"
-                                        alt="client logo"
-                                        class="client-logo"
-                                        data-app-light-img="front-pages/branding/logo_5-light.png"
-                                        data-app-dark-img="front-pages/branding/logo_5-dark.png"/>
-                            </div>
+        </div>
+        <!-- What people say slider: End -->
+        <hr class="m-0"/>
+        <!-- Logo slider: Start -->
+        <div class="container">
+            <div class="swiper-logo-carousel py-4 my-lg-2">
+                <div class="swiper" id="swiper-clients-logos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                    src="{% static 'assets/img/front-pages/branding/logo_1-light.png' %}"
+                                    alt="client logo"
+                                    class="client-logo"
+                                    data-app-light-img="front-pages/branding/logo_1-light.png"
+                                    data-app-dark-img="front-pages/branding/logo_1-dark.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                    src="{% static 'assets/img/front-pages/branding/logo_2-light.png' %}"
+                                    alt="client logo"
+                                    class="client-logo"
+                                    data-app-light-img="front-pages/branding/logo_2-light.png"
+                                    data-app-dark-img="front-pages/branding/logo_2-dark.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                    src="{% static 'assets/img/front-pages/branding/logo_3-light.png' %}"
+                                    alt="client logo"
+                                    class="client-logo"
+                                    data-app-light-img="front-pages/branding/logo_3-light.png"
+                                    data-app-dark-img="front-pages/branding/logo_3-dark.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                    src="{% static 'assets/img/front-pages/branding/logo_4-light.png' %}"
+                                    alt="client logo"
+                                    class="client-logo"
+                                    data-app-light-img="front-pages/branding/logo_4-light.png"
+                                    data-app-dark-img="front-pages/branding/logo_4-dark.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                    src="{% static 'assets/img/front-pages/branding/logo_5-light.png' %}"
+                                    alt="client logo"
+                                    class="client-logo"
+                                    data-app-light-img="front-pages/branding/logo_5-light.png"
+                                    data-app-dark-img="front-pages/branding/logo_5-dark.png"/>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Logo slider: End -->
-        </section>
-        <!-- Real customers reviews: End -->
+        </div>
+        <!-- Logo slider: End -->
+    </section>
+    <!-- Real customers reviews: End -->
 
-        <!-- Our great team: Start -->
-        <section id="landingTeam" class="section-py landing-team">
-            <div class="container">
-                <div class="text-center mb-3 pb-1">
-                    <span class="badge bg-label-primary">Notre Équipe</span>
+    <!-- Our great team: Start -->
+    <section id="landingTeam" class="section-py landing-team">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">Notre Équipe</span>
+            </div>
+            <h3 class="text-center mb-1"><span class="section-title">Soutenu</span> par de vraies visionnaires</h3>
+            <p class="text-center mb-md-5 pb-3">Qui se cache derrière ces système magnifiques ?</p>
+            <div class="row gy-5 mt-2">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-primary position-relative team-image-box">
+                            <img
+                                    src="{% static 'assets/img/front-pages/landing-page/1.png' %}"
+                                    class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                    alt="human image"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-primary text-center">
+                            <h5 class="card-title mb-0">Ruth Chansa</h5>
+                            <p class="text-muted mb-0">Project Manager</p>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-center mb-1"><span class="section-title">Soutenu</span> par de vraies visionnaires</h3>
-                <p class="text-center mb-md-5 pb-3">Qui se cache derrière ces système magnifiques ?</p>
-                <div class="row gy-5 mt-2">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card mt-3 mt-lg-0 shadow-none">
-                            <div class="bg-label-primary position-relative team-image-box">
-                                <img
-                                        src="{% static 'assets/img/front-pages/landing-page/1.png' %}"
-                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
-                                        alt="human image"/>
-                            </div>
-                            <div class="card-body border border-top-0 border-label-primary text-center">
-                                <h5 class="card-title mb-0">Ruth Chansa</h5>
-                                <p class="text-muted mb-0">Project Manager</p>
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-info position-relative team-image-box">
+                            <img
+                                    src="{% static 'assets/img/front-pages/landing-page/2.png' %}"
+                                    class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                    alt="human image"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-info text-center">
+                            <h5 class="card-title mb-0">Abigäel Jennifer</h5>
+                            <p class="text-muted mb-0">Expert en Management</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card mt-3 mt-lg-0 shadow-none">
-                            <div class="bg-label-info position-relative team-image-box">
-                                <img
-                                        src="{% static 'assets/img/front-pages/landing-page/2.png' %}"
-                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
-                                        alt="human image"/>
-                            </div>
-                            <div class="card-body border border-top-0 border-label-info text-center">
-                                <h5 class="card-title mb-0">Abigäel Jennifer</h5>
-                                <p class="text-muted mb-0">Expert en Management</p>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-danger position-relative team-image-box">
+                            <img
+                                    src="{% static 'assets/img/front-pages/landing-page/3.png' %}"
+                                    class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                    alt="human image"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-danger text-center">
+                            <h5 class="card-title mb-0">Happy Lengwe</h5>
+                            <p class="text-muted mb-0">Specialiste en communication</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card mt-3 mt-lg-0 shadow-none">
-                            <div class="bg-label-danger position-relative team-image-box">
-                                <img
-                                        src="{% static 'assets/img/front-pages/landing-page/3.png' %}"
-                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
-                                        alt="human image"/>
-                            </div>
-                            <div class="card-body border border-top-0 border-label-danger text-center">
-                                <h5 class="card-title mb-0">Happy Lengwe</h5>
-                                <p class="text-muted mb-0">Specialiste en communication</p>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-success position-relative team-image-box">
+                            <img
+                                    src="{% static 'assets/img/front-pages/landing-page/4.png' %}"
+                                    class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                    alt="human image"/>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card mt-3 mt-lg-0 shadow-none">
-                            <div class="bg-label-success position-relative team-image-box">
-                                <img
-                                        src="{% static 'assets/img/front-pages/landing-page/4.png' %}"
-                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
-                                        alt="human image"/>
-                            </div>
-                            <div class="card-body border border-top-0 border-label-success text-center">
-                                <h5 class="card-title mb-0">Shela Watkins</h5>
-                                <p class="text-muted mb-0">Marketing Manager</p>
-                            </div>
+                        <div class="card-body border border-top-0 border-label-success text-center">
+                            <h5 class="card-title mb-0">Shela Watkins</h5>
+                            <p class="text-muted mb-0">Marketing Manager</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Our great team: End -->
+        </div>
+    </section>
+    <!-- Our great team: End -->
 
-        <!-- Pricing plans: Start -->
-        <section id="landingPricing" class="section-py bg-body landing-pricing">
-            <div class="container">
-                <div class="text-center mb-3 pb-1">
-                    <span class="badge bg-label-primary">Plans d'Abonnement</span>
-                </div>
-                <h3 class="text-center mb-1"><span class="section-title">Des plans de tarification personnalisés</span>
-                    conçus pour vous
-                </h3>
-                <p class="text-center mb-4 pb-3">
-                    Tous les plans incluent plus de 40 outils et fonctionnalités avancés pour booster votre
-                    produit.<br/>Choisissez le meilleur plan qui correspond à vos besoins.
-                </p>
-                <div class="text-center mb-5">
-                    <div class="position-relative d-inline-block pt-3 pt-md-0">
-                        <label class="switch switch-primary me-0">
-                            <span class="switch-label">Paiement mensuel</span>
-                            <input type="checkbox" class="switch-input price-duration-toggler" checked/>
-                            <span class="switch-toggle-slider">
+    <!-- Pricing plans: Start -->
+    <section id="landingPricing" class="section-py bg-body landing-pricing">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">Plans d'Abonnement</span>
+            </div>
+            <h3 class="text-center mb-1"><span class="section-title">Des plans de tarification personnalisés</span>
+                conçus pour vous
+            </h3>
+            <p class="text-center mb-4 pb-3">
+                Tous les plans incluent plus de 40 outils et fonctionnalités avancés pour booster votre
+                produit.<br/>Choisissez le meilleur plan qui correspond à vos besoins.
+            </p>
+            <div class="text-center mb-5">
+                <div class="position-relative d-inline-block pt-3 pt-md-0">
+                    <label class="switch switch-primary me-0">
+                        <span class="switch-label">Paiement mensuel</span>
+                        <input type="checkbox" class="switch-input price-duration-toggler" checked/>
+                        <span class="switch-toggle-slider">
                   <span class="switch-on"></span>
                   <span class="switch-off"></span>
                 </span>
-                            <span class="switch-label">Paiement Annuel</span>
-                        </label>
-                        <div class="pricing-plans-item position-absolute d-flex">
-                            <img
-                                    src="{% static 'assets/img/front-pages/icons/pricing-plans-arrow.png' %}"
-                                    alt="pricing plans arrow"
-                                    class="scaleX-n1-rtl"/>
-                            <span class="fw-semibold mt-2 ms-1">25% de remise</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row gy-4 pt-lg-3">
-                    <!-- Basic Plan: Start -->
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="text-center">
-                                    <img
-                                            src="{% static 'assets/img/front-pages/icons/paper-airplane.png' %}"
-                                            alt="paper airplane icon"
-                                            class="mb-4 pb-2"/>
-                                    <h4 class="mb-1">Forfait Personnel</h4>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="price-monthly h1 text-primary fw-bold mb-0">$00</span>
-                                        <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">$00</span>
-                                        <sub class="h6 text-muted mb-0 ms-1">/mois</sub>
-                                    </div>
-                                    <div class="position-relative pt-2">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 00 / An
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Accès à une base de données complète
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Tests d'orientation
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Suggestions de carrières
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Conseils personnalisés
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Ressources éducatives
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Accès au blog
-                                        </h5>
-                                    </li>
-
-                                    <br><br><br><br>
-                                </ul>
-                                <div class="d-grid mt-4 pt-3">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Basic Plan: End -->
-
-                    <!-- Favourite Plan: Start -->
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="card border border-primary shadow-lg">
-                            <div class="card-header">
-                                <div class="text-center">
-                                    <img src="{% static 'assets/img/front-pages/icons/plane.png' %}" alt="plane icon"
-                                         class="mb-4 pb-2"/>
-                                    <h4 class="mb-1">Forfait Formateur</h4>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="price-monthly h1 text-primary fw-bold mb-0">$50</span>
-                                        <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">$37,5</span>
-                                        <sub class="h6 text-muted mb-0 ms-1">/mo</sub>
-                                    </div>
-                                    <div class="position-relative pt-2">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 450 / year
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Toutes les fonctionnalités du forfait Personnel
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Création de profils d'étudiants
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Gestion des sessions des formations et des calendriers
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Suivi des statistiques et performances des étudiants
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Création de quiz et évaluations
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Communication directe avec les étudiants
-                                        </h5>
-                                    </li>
-                                </ul>
-                                <div class="d-grid mt-4 pt-3">
-                                    <a href="payment-page.html" class="btn btn-primary">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Favourite Plan: End -->
-
-                    <!-- Standard Plan: Start -->
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="text-center">
-                                    <img
-                                            src="{% static 'assets/img/front-pages/icons/shuttle-rocket.png' %}"
-                                            alt="shuttle rocket icon"
-                                            class="mb-4 pb-2"/>
-                                    <h4 class="mb-1">Forfait Ecole / Université</h4>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="price-monthly h1 text-primary fw-bold mb-0">$150</span>
-                                        <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">$112,5</span>
-                                        <sub class="h6 text-muted mb-0 ms-1">/mois</sub>
-                                    </div>
-                                    <div class="position-relative pt-2">
-                                        <div class="price-yearly text-muted price-yearly-toggle d-none">$ 1350 / an
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Toutes les fonctionnalités du forfait Formateur
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Gestion des programmes d'études et cursus scolaires
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Suivi des diplômes et certifications des étudiants
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Gestion des stages et opportunités de carrière
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Intégration avec d'autres systèmes de gestion
-                                        </h5>
-                                    </li>
-                                    <li>
-                                        <h5>
-                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
-                        ><i class="ti ti-check ti-xs"></i
-                        ></span>
-                                            Support technique prioritaire
-                                        </h5>
-                                    </li>
-                                </ul>
-                                <div class="d-grid mt-4 pt-3">
-                                    <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Standard Plan: End -->
-                </div>
-            </div>
-        </section>
-        <!-- Pricing plans: End -->
-
-        <!-- Fun facts: Start -->
-        <section id="landingFunFacts" class="section-py landing-fun-facts">
-            <div class="container">
-                <div class="row gy-3">
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="card border border-label-primary shadow-none">
-                            <div class="card-body text-center">
-                                <img src="{% static 'assets/img/front-pages/icons/laptop.png' %}"
-                                     alt="ordinateur portable"
-                                     class="mb-2"/>
-                                <h5 class="h2 mb-1">7.1k+</h5>
-                                <p class="fw-medium mb-0">
-                                    Tickets de support<br/>
-                                    résolus
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="card border border-label-success shadow-none">
-                            <div class="card-body text-center">
-                                <img src="{% static 'assets/img/front-pages/icons/user-success.png' %}"
-                                     alt="utilisateur réussi"
-                                     class="mb-2"/>
-                                <h5 class="h2 mb-1">50k+</h5>
-                                <p class="fw-medium mb-0">
-                                    Notre communauté<br/>
-                                    des créatifs
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="card border border-label-info shadow-none">
-                            <div class="card-body text-center">
-                                <img src="{% static 'assets/img/front-pages/icons/diamond-info.png' %}"
-                                     alt="diamant-info"
-                                     class="mb-2"/>
-                                <h5 class="h2 mb-1">4.8/5</h5>
-                                <p class="fw-medium mb-0">
-                                    Produits<br/>
-                                    hautement évalués
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="card border border-label-warning shadow-none">
-                            <div class="card-body text-center">
-                                <img src="{% static 'assets/img/front-pages/icons/check-warning.png' %}"
-                                     alt="vérification d'avertissement"
-                                     class="mb-2"/>
-                                <h5 class="h2 mb-1">100%</h5>
-                                <p class="fw-medium mb-0">
-                                    Garantie de remboursement<br/>
-                                    à 100%
-                                </p>
-                            </div>
-                        </div>
+                        <span class="switch-label">Paiement Annuel</span>
+                    </label>
+                    <div class="pricing-plans-item position-absolute d-flex">
+                        <img
+                                src="{% static 'assets/img/front-pages/icons/pricing-plans-arrow.png' %}"
+                                alt="pricing plans arrow"
+                                class="scaleX-n1-rtl"/>
+                        <span class="fw-semibold mt-2 ms-1">25% de remise</span>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Fun facts: End -->
 
-        <!-- FAQ: Start -->
-        <section id="landingFAQ" class="section-py bg-body landing-faq">
-            <div class="container">
-                <div class="text-center mb-3 pb-1">
-                    <span class="badge bg-label-primary">FAQ</span>
-                </div>
-                <h3 class="text-center mb-1">Questions fréquemment <span class="section-title">posées</span></h3>
-                <p class="text-center mb-5 pb-3">Parcourez ces FAQ pour trouver des réponses aux questions couramment
-                    posées.</p>
-                <div class="row gy-5">
-                    <div class="col-lg-5">
-                        <div class="text-center">
-                            <img src="{% static 'assets/img/front-pages/landing-page/faq-boy-with-logos.png' %}"
-                                 alt="garçon avec des logos" class="faq-image"/>
+            <div class="row gy-4 pt-lg-3">
+                <!-- Basic Plan: Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-center">
+                                <img
+                                        src="{% static 'assets/img/front-pages/icons/paper-airplane.png' %}"
+                                        alt="paper airplane icon"
+                                        class="mb-4 pb-2"/>
+                                <h4 class="mb-1">Forfait Personnel</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$00</span>
+                                    <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">$00</span>
+                                    <sub class="h6 text-muted mb-0 ms-1">/mois</sub>
+                                </div>
+                                <div class="position-relative pt-2">
+                                    <div class="price-yearly text-muted price-yearly-toggle d-none">$ 00 / An
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Accès à une base de données complète
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Tests d'orientation
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Suggestions de carrières
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Conseils personnalisés
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Ressources éducatives
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Accès au blog
+                                    </h5>
+                                </li>
+
+                                <br><br><br><br>
+                            </ul>
+                            <div class="d-grid mt-4 pt-3">
+                                <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card accordion-item active">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
-                                            data-bs-target="#accordionOne" aria-expanded="true"
-                                            aria-controls="accordionOne">
-                                        Est-ce que vous facturez pour chaque mise à niveau ?
-                                    </button>
-                                </h2>
+                </div>
+                <!-- Basic Plan: End -->
 
-                                <div id="accordionOne" class="accordion-collapse collapse show"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Bonbons au citron, gâteau au chocolat, bonbons gélifiés, gâteau aux carottes,
-                                        muffin. Snaps de sésame,
-                                        glaçage, massepain, oursons gélifiés, macaron, dragée, danoises, caramels en
-                                        poudre. Bear claw dragée
-                                        pâtisserie, garniture de soufflé. Gaufrette, oursons gélifiés, guimauve,
-                                        pâtisserie, tarte.
+                <!-- Favourite Plan: Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <div class="card border border-primary shadow-lg">
+                        <div class="card-header">
+                            <div class="text-center">
+                                <img src="{% static 'assets/img/front-pages/icons/plane.png' %}" alt="plane icon"
+                                     class="mb-4 pb-2"/>
+                                <h4 class="mb-1">Forfait Formateur</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$50</span>
+                                    <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">$37,5</span>
+                                    <sub class="h6 text-muted mb-0 ms-1">/mo</sub>
+                                </div>
+                                <div class="position-relative pt-2">
+                                    <div class="price-yearly text-muted price-yearly-toggle d-none">$ 450 / year
                                     </div>
                                 </div>
                             </div>
-                            <div class="card accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                            data-bs-target="#accordionTwo" aria-expanded="false"
-                                            aria-controls="accordionTwo">
-                                        Est-ce que j'ai besoin d'acheter une licence pour chaque site web ?
-                                    </button>
-                                </h2>
-                                <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Dessert, crème glacée, beignet, gâteau à l'avoine, gelée, tarte aux prunes
-                                        sucrée, cheesecake. Bear claw dragée, avoine,
-                                        gâteau, tarte, macaron, beignet, bonbons gélifiés. Haricots de gelée, cannes en
-                                        sucre, gâteau aux carottes. Fruitcake,
-                                        chocolat, chupa chups.
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Toutes les fonctionnalités du forfait Personnel
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Création de profils d'étudiants
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Gestion des sessions des formations et des calendriers
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Suivi des statistiques et performances des étudiants
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Création de quiz et évaluations
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Communication directe avec les étudiants
+                                    </h5>
+                                </li>
+                            </ul>
+                            <div class="d-grid mt-4 pt-3">
+                                <a href="payment-page.html" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Favourite Plan: End -->
+
+                <!-- Standard Plan: Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-center">
+                                <img
+                                        src="{% static 'assets/img/front-pages/icons/shuttle-rocket.png' %}"
+                                        alt="shuttle rocket icon"
+                                        class="mb-4 pb-2"/>
+                                <h4 class="mb-1">Forfait Ecole / Université</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">$150</span>
+                                    <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">$112,5</span>
+                                    <sub class="h6 text-muted mb-0 ms-1">/mois</sub>
+                                </div>
+                                <div class="position-relative pt-2">
+                                    <div class="price-yearly text-muted price-yearly-toggle d-none">$ 1350 / an
                                     </div>
                                 </div>
                             </div>
-                            <div class="card accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                            data-bs-target="#accordionThree" aria-expanded="false"
-                                            aria-controls="accordionThree">
-                                        Qu'est-ce qu'une licence régulière ?
-                                    </button>
-                                </h2>
-                                <div id="accordionThree" class="accordion-collapse collapse"
-                                     aria-labelledby="headingThree"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Une licence régulière peut être utilisée pour des produits finaux pour lesquels
-                                        les utilisateurs n'ont pas à payer pour l'accès ou
-                                        le service (l'accès est gratuit et il n'y aura pas de frais d'abonnement
-                                        mensuel). Une seule licence régulière peut être utilisée pour
-                                        un seul produit final et ce produit final peut être utilisé par vous ou votre
-                                        client. Si vous souhaitez vendre le produit final à plusieurs
-                                        clients, vous devrez acheter une licence séparée pour chaque client. La même
-                                        règle s'applique si vous souhaitez utiliser le même produit final
-                                        sur plusieurs domaines (configuration unique). Pour plus d'informations sur la
-                                        licence régulière, vous pouvez consulter la description officielle.
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Toutes les fonctionnalités du forfait Formateur
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Gestion des programmes d'études et cursus scolaires
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Suivi des diplômes et certifications des étudiants
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Gestion des stages et opportunités de carrière
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Intégration avec d'autres systèmes de gestion
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2"
+                        ><i class="ti ti-check ti-xs"></i
+                        ></span>
+                                        Support technique prioritaire
+                                    </h5>
+                                </li>
+                            </ul>
+                            <div class="d-grid mt-4 pt-3">
+                                <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
                             </div>
-                            <div class="card accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                            data-bs-target="#accordionFour" aria-expanded="false"
-                                            aria-controls="accordionFour">
-                                        Qu'est-ce qu'une licence étendue ?
-                                    </button>
-                                </h2>
-                                <div id="accordionFour" class="accordion-collapse collapse"
-                                     aria-labelledby="headingFour"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et aliquid
-                                        quaerat
-                                        possimus maxime! Mollitia reprehenderit neque repellat deleniti delectus
-                                        architecto
-                                        dolorum maxime, blanditiis earum ea, incidunt quam possimus cumque.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card accordion-item">
-                                <h2 class="accordion-header" id="headingFive">
-                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                                            data-bs-target="#accordionFive" aria-expanded="false"
-                                            aria-controls="accordionFive">
-                                        Quelle licence s'applique aux applications SASS ?
-                                    </button>
-                                </h2>
-                                <div id="accordionFive" class="accordion-collapse collapse"
-                                     aria-labelledby="headingFive"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi molestias
-                                        exercitationem ab
-                                        cum nemo facere voluptates veritatis quia, eveniet veniam at et repudiandae
-                                        mollitia
-                                        ipsam quasi labore enim architecto non!
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Standard Plan: End -->
+            </div>
+        </div>
+    </section>
+    <!-- Pricing plans: End -->
+
+    <!-- Fun facts: Start -->
+    <section id="landingFunFacts" class="section-py landing-fun-facts">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-primary shadow-none">
+                        <div class="card-body text-center">
+                            <img src="{% static 'assets/img/front-pages/icons/laptop.png' %}"
+                                 alt="ordinateur portable"
+                                 class="mb-2"/>
+                            <h5 class="h2 mb-1">7.1k+</h5>
+                            <p class="fw-medium mb-0">
+                                Tickets de support<br/>
+                                résolus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-success shadow-none">
+                        <div class="card-body text-center">
+                            <img src="{% static 'assets/img/front-pages/icons/user-success.png' %}"
+                                 alt="utilisateur réussi"
+                                 class="mb-2"/>
+                            <h5 class="h2 mb-1">50k+</h5>
+                            <p class="fw-medium mb-0">
+                                Notre communauté<br/>
+                                des créatifs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-info shadow-none">
+                        <div class="card-body text-center">
+                            <img src="{% static 'assets/img/front-pages/icons/diamond-info.png' %}"
+                                 alt="diamant-info"
+                                 class="mb-2"/>
+                            <h5 class="h2 mb-1">4.8/5</h5>
+                            <p class="fw-medium mb-0">
+                                Produits<br/>
+                                hautement évalués
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-warning shadow-none">
+                        <div class="card-body text-center">
+                            <img src="{% static 'assets/img/front-pages/icons/check-warning.png' %}"
+                                 alt="vérification d'avertissement"
+                                 class="mb-2"/>
+                            <h5 class="h2 mb-1">100%</h5>
+                            <p class="fw-medium mb-0">
+                                Garantie de remboursement<br/>
+                                à 100%
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- FAQ: End -->
+        </div>
+    </section>
+    <!-- Fun facts: End -->
 
-        <!-- CTA: Start -->
-        <section id="landingCTA" class="section-py landing-cta p-lg-0 pb-0">
-            <div class="container">
-                <div class="row align-items-center gy-5 gy-lg-0">
-                    <div class="col-lg-6 text-center text-lg-start">
-                        <h6 class="h2 text-primary fw-bold mb-1">Prêt à nous rejoindre <br>et travailler avec nous ?
-                        </h6>
-                        <p class="fw-medium mb-4">Découvrez dès maintenant les avantages que vous offre Orient, la
-                            plateforme
-                            d'orientation scolaire et professionnelle, en profitant d'un essai gratuit de 14 jours !</p>
-                        <p class="fw-medium mb-4">Orient offre une gamme complète de services de gestion aux centres de
-                            formation, aux écoles et universités. Nous sommes là pour vous aider à accompagner les
-                            étudiants, élèves et professionnels dans leur parcours d'orientation grâce à des tests et
-                            autres outils spécialisés.</p>
-                        <a href="{% url 'pricing' %}" class="btn btn-lg btn-primary">Commencer</a>
-                    </div>
-                    <div class="col-lg-6 pt-lg-5 text-center text-lg-end">
-                        <img src="{% static 'assets/img/front-pages/landing-page/1.png' %}"
-                             alt="tableau de bord CTA"
-                             class="img-fluid"/>
-                    </div>
-                </div>
+    <!-- FAQ: Start -->
+    <section id="landingFAQ" class="section-py bg-body landing-faq">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">FAQ</span>
             </div>
-        </section>
-        <!-- CTA: End -->
-
-        <!-- Contact Us: Start -->
-        <section id="landingContact" class="section-py bg-body landing-contact">
-            <div class="container">
-                <div class="text-center mb-3 pb-1">
-                    <span class="badge bg-label-primary">Contactez-nous</span>
+            <h3 class="text-center mb-1">Questions fréquemment <span class="section-title">posées</span></h3>
+            <p class="text-center mb-5 pb-3">Parcourez ces FAQ pour trouver des réponses aux questions couramment
+                posées.</p>
+            <div class="row gy-5">
+                <div class="col-lg-5">
+                    <div class="text-center">
+                        <img src="{% static 'assets/img/front-pages/landing-page/faq-boy-with-logos.png' %}"
+                             alt="garçon avec des logos" class="faq-image"/>
+                    </div>
                 </div>
-                <h3 class="text-center mb-1"><span class="section-title">Travaillons</span> ensemble</h3>
-                <p class="text-center mb-4 mb-lg-5 pb-md-3">Une question ou un commentaire ? Envoyez-nous un message</p>
-                <div class="row gy-4">
-                    <div class="col-lg-5">
-                        <div class="contact-img-box position-relative border p-2 h-100">
-                            <img src="{% static 'assets/img/front-pages/landing-page/contact-customer-service.png' %}"
-                                 alt="service client"
-                                 class="contact-img w-100 scaleX-n1-rtl"/>
-                            <div class="pt-3 px-4 pb-1">
-                                <div class="row gy-3 gx-md-4">
-                                    <div class="col-md-6 col-lg-12 col-xl-6">
-                                        <div class="d-flex align-items-center">
-                                            <div class="badge bg-label-primary rounded p-2 me-2"><i
-                                                    class="ti ti-mail ti-sm"></i></div>
-                                            <div>
-                                                <p class="mb-0">Email</p>
-                                                <h5 class="mb-0">
-                                                    <a href="mailto:atonixevo@gmail.com" class="text-heading">atonixevo@gmail.com</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-12 col-xl-6">
-                                        <div class="d-flex align-items-center">
-                                            <div class="badge bg-label-success rounded p-2 me-2">
-                                                <i class="ti ti-phone-call ti-sm"></i>
-                                            </div>
-                                            <div>
-                                                <p class="mb-0">Téléphone</p>
-                                                <h5 class="mb-0"><a href="tel:+243-9717-69656" class="text-heading">+243
-                                                    9717 69656</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="col-lg-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card accordion-item active">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionOne" aria-expanded="true"
+                                        aria-controls="accordionOne">
+                                    Est-ce que vous facturez pour chaque mise à niveau ?
+                                </button>
+                            </h2>
+
+                            <div id="accordionOne" class="accordion-collapse collapse show"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Bonbons au citron, gâteau au chocolat, bonbons gélifiés, gâteau aux carottes,
+                                    muffin. Snaps de sésame,
+                                    glaçage, massepain, oursons gélifiés, macaron, dragée, danoises, caramels en
+                                    poudre. Bear claw dragée
+                                    pâtisserie, garniture de soufflé. Gaufrette, oursons gélifiés, guimauve,
+                                    pâtisserie, tarte.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="mb-1">Envoyer un message</h4>
-                                <p class="mb-4">
-                                    Si vous souhaitez discuter de tout ce qui concerne le paiement, le compte, la
-                                    licence,
-                                    les partenariats, ou si vous avez des questions pré-vente, vous êtes au bon endroit.
-                                </p>
-                                <form>
-                                    <div class="row g-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="contact-form-fullname">Nom complet</label>
-                                            <input type="text" class="form-control" id="contact-form-fullname"
-                                                   placeholder="Ameno"/>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="contact-form-email">Email</label>
-                                            <input type="text" id="contact-form-email" class="form-control"
-                                                   placeholder="amenoneo@gmail.com"/>
-                                        </div>
-                                        <div class="col-12">
-                                            <label class="form-label" for="contact-form-message">Message</label>
-                                            <textarea id="contact-form-message" class="form-control" rows="8"
-                                                      placeholder="Écrivez un message"></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Envoyer</button>
-                                        </div>
-                                    </div>
-                                </form>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionTwo" aria-expanded="false"
+                                        aria-controls="accordionTwo">
+                                    Est-ce que j'ai besoin d'acheter une licence pour chaque site web ?
+                                </button>
+                            </h2>
+                            <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Dessert, crème glacée, beignet, gâteau à l'avoine, gelée, tarte aux prunes
+                                    sucrée, cheesecake. Bear claw dragée, avoine,
+                                    gâteau, tarte, macaron, beignet, bonbons gélifiés. Haricots de gelée, cannes en
+                                    sucre, gâteau aux carottes. Fruitcake,
+                                    chocolat, chupa chups.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionThree" aria-expanded="false"
+                                        aria-controls="accordionThree">
+                                    Qu'est-ce qu'une licence régulière ?
+                                </button>
+                            </h2>
+                            <div id="accordionThree" class="accordion-collapse collapse"
+                                 aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Une licence régulière peut être utilisée pour des produits finaux pour lesquels
+                                    les utilisateurs n'ont pas à payer pour l'accès ou
+                                    le service (l'accès est gratuit et il n'y aura pas de frais d'abonnement
+                                    mensuel). Une seule licence régulière peut être utilisée pour
+                                    un seul produit final et ce produit final peut être utilisé par vous ou votre
+                                    client. Si vous souhaitez vendre le produit final à plusieurs
+                                    clients, vous devrez acheter une licence séparée pour chaque client. La même
+                                    règle s'applique si vous souhaitez utiliser le même produit final
+                                    sur plusieurs domaines (configuration unique). Pour plus d'informations sur la
+                                    licence régulière, vous pouvez consulter la description officielle.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionFour" aria-expanded="false"
+                                        aria-controls="accordionFour">
+                                    Qu'est-ce qu'une licence étendue ?
+                                </button>
+                            </h2>
+                            <div id="accordionFour" class="accordion-collapse collapse"
+                                 aria-labelledby="headingFour"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et aliquid
+                                    quaerat
+                                    possimus maxime! Mollitia reprehenderit neque repellat deleniti delectus
+                                    architecto
+                                    dolorum maxime, blanditiis earum ea, incidunt quam possimus cumque.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionFive" aria-expanded="false"
+                                        aria-controls="accordionFive">
+                                    Quelle licence s'applique aux applications SASS ?
+                                </button>
+                            </h2>
+                            <div id="accordionFive" class="accordion-collapse collapse"
+                                 aria-labelledby="headingFive"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi molestias
+                                    exercitationem ab
+                                    cum nemo facere voluptates veritatis quia, eveniet veniam at et repudiandae
+                                    mollitia
+                                    ipsam quasi labore enim architecto non!
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact Us: End -->
-    </div>
+        </div>
+    </section>
+    <!-- FAQ: End -->
 
-    <!-- / Sections:End -->
+    <!-- CTA: Start -->
+    <section id="landingCTA" class="section-py landing-cta p-lg-0 pb-0">
+        <div class="container">
+            <div class="row align-items-center gy-5 gy-lg-0">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h6 class="h2 text-primary fw-bold mb-1">Prêt à nous rejoindre <br>et travailler avec nous ?
+                    </h6>
+                    <p class="fw-medium mb-4">Découvrez dès maintenant les avantages que vous offre Orient, la
+                        plateforme
+                        d'orientation scolaire et professionnelle, en profitant d'un essai gratuit de 14 jours !</p>
+                    <p class="fw-medium mb-4">Orient offre une gamme complète de services de gestion aux centres de
+                        formation, aux écoles et universités. Nous sommes là pour vous aider à accompagner les
+                        étudiants, élèves et professionnels dans leur parcours d'orientation grâce à des tests et
+                        autres outils spécialisés.</p>
+                    <a href="{% url 'pricing' %}" class="btn btn-lg btn-primary">Commencer</a>
+                </div>
+                <div class="col-lg-6 pt-lg-5 text-center text-lg-end">
+                    <img src="{% static 'assets/img/front-pages/landing-page/1.png' %}"
+                         alt="tableau de bord CTA"
+                         class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA: End -->
+
+    <!-- Contact Us: Start -->
+    <section id="landingContact" class="section-py bg-body landing-contact">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">Contactez-nous</span>
+            </div>
+            <h3 class="text-center mb-1"><span class="section-title">Travaillons</span> ensemble</h3>
+            <p class="text-center mb-4 mb-lg-5 pb-md-3">Une question ou un commentaire ? Envoyez-nous un message</p>
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="contact-img-box position-relative border p-2 h-100">
+                        <img src="{% static 'assets/img/front-pages/landing-page/contact-customer-service.png' %}"
+                             alt="service client"
+                             class="contact-img w-100 scaleX-n1-rtl"/>
+                        <div class="pt-3 px-4 pb-1">
+                            <div class="row gy-3 gx-md-4">
+                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="badge bg-label-primary rounded p-2 me-2"><i
+                                                class="ti ti-mail ti-sm"></i></div>
+                                        <div>
+                                            <p class="mb-0">Email</p>
+                                            <h5 class="mb-0">
+                                                <a href="mailto:atonixevo@gmail.com" class="text-heading">atonixevo@gmail.com</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="badge bg-label-success rounded p-2 me-2">
+                                            <i class="ti ti-phone-call ti-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Téléphone</p>
+                                            <h5 class="mb-0"><a href="tel:+243-9717-69656" class="text-heading">+243
+                                                9717 69656</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mb-1">Envoyer un message</h4>
+                            <p class="mb-4">
+                                Si vous souhaitez discuter de tout ce qui concerne le paiement, le compte, la
+                                licence,
+                                les partenariats, ou si vous avez des questions pré-vente, vous êtes au bon endroit.
+                            </p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="contact-form-fullname">Nom complet</label>
+                                        <input type="text" class="form-control" id="contact-form-fullname"
+                                               placeholder="Ameno"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="contact-form-email">Email</label>
+                                        <input type="text" id="contact-form-email" class="form-control"
+                                               placeholder="amenoneo@gmail.com"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="contact-form-message">Message</label>
+                                        <textarea id="contact-form-message" class="form-control" rows="8"
+                                                  placeholder="Écrivez un message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us: End -->
+</div>
+
+<!-- / Sections:End -->
 
 {% endblock %}

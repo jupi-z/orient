@@ -1,9 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
-
 {% block content %}
+
+    <h1>Aptitude Tests</h1>
+    <p>Welcome to our aptitude tests page. Here, you can test your skills and knowledge in various
+        areas.</p> <h2>Mathematics Test</h2>
+    <form><label for="question1">What is the value of 2 + 2?</label><br> <input type="text" id="question1"
+                                                                                name="question1"><br>
+        <input type="submit" value="Submit"></form> <h2>Verbal Test</h2> <p>Choose the correct synonym for the word
+    "happy".</p>
+    <form><label for="question2">A) Cheerful</label><br> <input type="radio" id="question2" name="question2"
+                                                                value="A"><br>
+        <label for="question2">B) Angry</label><br> <input type="radio" id="question2" name="question2" value="B"><br>
+        <input type="submit" value="Submit"></form> <h2>Logical Reasoning Test</h2>
+    <p>Which number replaces the question
+        mark in the following sequence: 2, 4, 6, ?</p>
+    <form><input type="text" id="question3" name="question3"><br> <input type="submit" value="Submit"></form>
+
 
 
 {% endblock %}
