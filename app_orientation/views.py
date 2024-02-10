@@ -33,6 +33,12 @@ class AssistanceView(View):
         return render(request, "pages/front-pages/assistance.html", {'page_active': page_active})
 
 
+class CommingSoonView(View):
+    def get(self, request):
+        page_active = 'commingsoon'
+        return render(request, "pages/utilpages/comming_soon.html", {'page_active': page_active})
+
+
 class OrientationView(View):
     def get(self, request):
         page_active = 'Services d\'orientation'

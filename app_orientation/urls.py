@@ -11,6 +11,7 @@ from app_orientation.views import (
     PredictionView,
     ServicesView,
     PricingView,
+    CommingSoonView,
 )
 
 urlpatterns = [
@@ -25,4 +26,5 @@ urlpatterns = [
     path('prediction/', PredictionView.as_view(), name='prediction'),
     path('services/', ServicesView.as_view(), name='services'),
     path('pricing/', PricingView.as_view(), name='pricing'),
+    path('comming_soon/', CommingSoonView.as_view(), name='comming_soon'),
 ]
