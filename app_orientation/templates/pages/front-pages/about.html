@@ -1,9 +1,8 @@
-<document>
-    {% extends 'base.html' %}
-    {% load static %}
+{% extends 'base.html' %}
+{% load static %}
 
-    {% block content %}
-        <div data-bs-spy="scroll" class="scrollspy-example">
+{% block content %}
+    <div data-bs-spy="scroll" class="scrollspy-example">
         <!-- Hero: Start -->
         <section id="hero-animation">
             <div id="landingHero" class="section-py landing-hero position-relative">
@@ -20,7 +19,7 @@
         </section>
         <!-- Hero: End -->
 
-        <section id="landingFeatures" class="section-py landing-features">
+        <section class="section-py landing-features">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -34,14 +33,16 @@
                         <h3>Notre mission</h3>
                         <p>Notre mission est de simplifier le processus d'orientation en fournissant un système de
                             recommandation intelligent. Grâce à notre technologie avancée d'analyse, nous vous
-                            offrons une vue d'ensemble sur les probabilités d'avenir qui s'ouvrent à vous et vous aidons
+                            offrons une vue d'ensemble sur les probabilités d'avenir qui s'ouvrent à vous et vous
+                            aidons
                             à faire un choix optimal.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Notre engagement envers vous</h3>
-                        <p>Nous nous engageons à vous offrir des conseils personnalisés, des ressources éducatives et un
+                        <p>Nous nous engageons à vous offrir des conseils personnalisés, des ressources éducatives
+                            et un
                             accès à notre blog pour vous tenir informé des dernières tendances. Nous voulons
                             être votre partenaire tout au long de votre parcours d'orientation scolaire ou
                             professionnelle. N'hésitez pas à nous contacter par email ou à nous appeler pour
@@ -49,7 +50,8 @@
                     </div>
                     <div class="col-md-6">
                         <h3>Plans de tarification</h3>
-                        <p>Nous proposons différents plans de tarification pour répondre à vos besoins spécifiques. Que
+                        <p>Nous proposons différents plans de tarification pour répondre à vos besoins spécifiques.
+                            Que
                             vous soyez un individu ou une organisation, nous avons un plan d'abonnement adapté pour
                             vous. Vous pouvez choisir entre un paiement mensuel ou annuel, avec une remise de 25%
                             pour le paiement annuel.</p>
@@ -57,5 +59,6 @@
                 </div>
             </div>
         </section>
-    {% endblock %}
-</document>
+    </div>
+
+{% endblock %}

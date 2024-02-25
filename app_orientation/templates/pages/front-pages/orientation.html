@@ -1,9 +1,686 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
-
 {% block content %}
 
+    <div data-bs-spy="scroll" class="scrollspy-example">
+        <!-- Hero: Start -->
+        <section id="hero-animation">
+            <div id="landingHero" class="section-py landing-hero position-relative">
+                <div class="container">
+                    <div class="hero-text-box text-center">
+                        <h1 class="text-primary hero-title display-6 fw-bold">Bienvenue <br>sur notre <br>service
+                            d’orientation</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero: End -->
+
+        <section class="container py-5">
+
+            <div class="container">
+                <p class=" lead text-center mb-4 pb-3">
+                    Notre service d’orientation est conçu pour vous aider à atteindre vos objectifs scolaires et
+                    professionnels. Nous offrons une variété de ressources et de services pour vous aider à évaluer
+                    vos
+                    intérêts et vos compétences, à rechercher des programmes d’études et des emplois, et à prendre
+                    des
+                    décisions éclairées sur votre avenir.
+                </p>
+
+
+                <h3 class="text-center mb-1"><span class="section-title">Processus </span>d’orientation
+                </h3>
+                <p class=" lead text-center mb-4 pb-3">
+                    Notre processus d’orientation se déroule en plusieurs étapes, y compris une évaluation de vos
+                    intérêts et de vos compétences, une exploration de vos options d’études et de carrière, et un
+                    plan
+                    d’action personnalisé pour vous aider à atteindre vos objectifs. Nous travaillerons avec vous
+                    pour
+                    comprendre vos besoins uniques et vous fournir des conseils et des ressources adaptées à votre
+                    situation.
+                </p>
+                <h3 class="text-center mb-1"><span class="section-title">Ressources </span>d’orientation
+                </h3>
+
+                <br>
+
+                <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
+                    <div class="col-lg-3 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/test_psy.png' %}"
+                                             alt="laptop charging"/></a>
+                        </div>
+                        <h5 class="mb-3">Tests d’intérêts et de personnalité</h5>
+                        <p class="features-icon-description">
+                            Découvrez vos intérêts et votre personnalité grâce à nos tests spécialisés. Obtenez des
+                            insights précieux sur vous-même !
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="{% url 'comming_soon' %}"><img
+                                    src="{% static 'assets/img/front-pages/icons/recherche_emploi.png' %}"
+                                    alt="transition up"/></a>
+                        </div>
+                        <h5 class="mb-3">Outils de recherche d’emploi</h5>
+                        <p class="features-icon-description">
+                            Accédez à nos outils avancés de recherche d'emploi pour trouver les meilleures opportunités
+                            correspondant à vos compétences et intérêts.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="{% url 'comming_soon' %}"><img
+                                    src="{% static 'assets/img/front-pages/icons/info_carrière.png' %}" alt="edit"/></a>
+                        </div>
+                        <h5 class="mb-3">Informations sur les carrières</h5>
+                        <p class="features-icon-description">
+                            Explorez notre vaste collection d'informations sur les différentes carrières. Obtenez des
+                            conseils et des perspectives pour prendre des décisions éclairées.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/guide_etude.png' %}"
+                                             alt="3d select solid"/></a>
+                        </div>
+                        <h5 class="mb-3">Guides d’études</h5>
+                        <p class="features-icon-description">
+                            Accédez à nos guides d'études complets pour vous aider à planifier et à réussir vos études.
+                            Des conseils pratiques et des ressources utiles vous attendent !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real customers reviews: Start -->
+        <section id="landingReviews" class="section-py bg-body landing-reviews pb-0">
+            <!-- What people say slider: Start -->
+            <div class="container">
+                <div class="row align-items-center gx-0 gy-4 g-lg-5">
+                    <div class="col-md-6 col-lg-5 col-xl-3">
+                        <div class="mb-3 pb-1">
+                            <span class="badge bg-label-primary">Avis de vrais clients</span>
+                        </div>
+                        <h3 class="mb-1"><span class="section-title">Ce que disent les gens</span></h3>
+                        <p class="mb-3 mb-md-5">
+                            Découvrez ce que nos clients ont à dire<br class="d-none d-xl-block"/>
+                            sur leur expérience.
+                        </p>
+                        <div class="landing-reviews-btns">
+                            <button
+                                    id="reviews-previous-btn"
+                                    class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl"
+                                    type="button">
+                                <i class="ti ti-chevron-left ti-sm"></i>
+                            </button>
+                            <button id="reviews-next-btn" class="btn btn-label-primary reviews-btn scaleX-n1-rtl"
+                                    type="button">
+                                <i class="ti ti-chevron-right ti-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-7 col-xl-9">
+                        <div class="swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3">
+                            <div class="swiper" id="swiper-reviews">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <img
+                                                            src="{% static 'assets/img/front-pages/branding/logo-1.png' %}"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"/>
+                                                </div>
+                                                <p>
+                                                    “Vuexy is hands down the most useful front end Bootstrap theme I've
+                                                    ever used. I can't wait
+                                                    to use it again for my next project.”
+                                                </p>
+                                                <div class="text-warning mb-3">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar me-2 avatar-sm">
+                                                        <img src="{% static 'assets/img/avatars/1.png' %}" alt="Avatar"
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0">Cecilia Payne</h6>
+                                                        <p class="small text-muted mb-0">CEO of Airbnb</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <img
+                                                            src="{% static 'assets/img/front-pages/branding/logo-2.png' %}"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"/>
+                                                </div>
+                                                <p>
+                                                    “I've never used a theme as versatile and flexible as Vuexy. It's my
+                                                    go to for building
+                                                    dashboard sites on almost any project.”
+                                                </p>
+                                                <div class="text-warning mb-3">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar me-2 avatar-sm">
+                                                        <img src="{% static 'assets/img/avatars/2.png' %}" alt="Avatar"
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0">Eugenia Moore</h6>
+                                                        <p class="small text-muted mb-0">Founder of Hubspot</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <img
+                                                            src="{% static 'assets/img/front-pages/branding/logo-3.png' %}"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"/>
+                                                </div>
+                                                <p>
+                                                    This template is really clean & well documented. The docs are really
+                                                    easy to understand and
+                                                    it's always easy to find a screenshot from their website.
+                                                </p>
+                                                <div class="text-warning mb-3">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar me-2 avatar-sm">
+                                                        <img src="{% static 'assets/img/avatars/3.png' %}" alt="Avatar"
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0">Curtis Fletcher</h6>
+                                                        <p class="small text-muted mb-0">Design Lead at Dribbble</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <img
+                                                            src="{% static 'assets/img/front-pages/branding/logo-4.png' %}"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"/>
+                                                </div>
+                                                <p>
+                                                    All the requirements for developers have been taken into
+                                                    consideration, so I’m able to build
+                                                    any interface I want.
+                                                </p>
+                                                <div class="text-warning mb-3">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar me-2 avatar-sm">
+                                                        <img src="{% static 'assets/img/avatars/4.png' %}" alt="Avatar"
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0">Sara Smith</h6>
+                                                        <p class="small text-muted mb-0">Founder of Continental</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <img
+                                                            src="{% static 'assets/img/front-pages/branding/logo-5.png' %}"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"/>
+                                                </div>
+                                                <p>
+                                                    “I've never used a theme as versatile and flexible as Vuexy. It's my
+                                                    go to for building
+                                                    dashboard sites on almost any project.”
+                                                </p>
+                                                <div class="text-warning mb-3">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar me-2 avatar-sm">
+                                                        <img src="{% static 'assets/img/avatars/5.png' %}" alt="Avatar"
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0">Eugenia Moore</h6>
+                                                        <p class="small text-muted mb-0">Founder of Hubspot</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card h-100">
+                                            <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                                <div class="mb-3">
+                                                    <img
+                                                            src="{% static 'assets/img/front-pages/branding/logo-6.png' %}"
+                                                            alt="client logo"
+                                                            class="client-logo img-fluid"/>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo
+                                                    mollitia, ad eum
+                                                    officia numquam nostrum repellendus consequuntur!
+                                                </p>
+                                                <div class="text-warning mb-3">
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star-filled ti-sm"></i>
+                                                    <i class="ti ti-star ti-sm"></i>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar me-2 avatar-sm">
+                                                        <img src="{% static 'assets/img/avatars/1.png' %}" alt="Avatar"
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0">Sara Smith</h6>
+                                                        <p class="small text-muted mb-0">Founder of Continental</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- What people say slider: End -->
+            <hr class="m-0"/>
+            <!-- Logo slider: Start -->
+            <div class="container">
+                <div class="swiper-logo-carousel py-4 my-lg-2">
+                    <div class="swiper" id="swiper-clients-logos">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img
+                                        src="{% static 'assets/img/front-pages/branding/logo_1-light.png' %}"
+                                        alt="client logo"
+                                        class="client-logo"
+                                        data-app-light-img="front-pages/branding/logo_1-light.png"
+                                        data-app-dark-img="front-pages/branding/logo_1-dark.png"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        src="{% static 'assets/img/front-pages/branding/logo_2-light.png' %}"
+                                        alt="client logo"
+                                        class="client-logo"
+                                        data-app-light-img="front-pages/branding/logo_2-light.png"
+                                        data-app-dark-img="front-pages/branding/logo_2-dark.png"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        src="{% static 'assets/img/front-pages/branding/logo_3-light.png' %}"
+                                        alt="client logo"
+                                        class="client-logo"
+                                        data-app-light-img="front-pages/branding/logo_3-light.png"
+                                        data-app-dark-img="front-pages/branding/logo_3-dark.png"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        src="{% static 'assets/img/front-pages/branding/logo_4-light.png' %}"
+                                        alt="client logo"
+                                        class="client-logo"
+                                        data-app-light-img="front-pages/branding/logo_4-light.png"
+                                        data-app-dark-img="front-pages/branding/logo_4-dark.png"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        src="{% static 'assets/img/front-pages/branding/logo_5-light.png' %}"
+                                        alt="client logo"
+                                        class="client-logo"
+                                        data-app-light-img="front-pages/branding/logo_5-light.png"
+                                        data-app-dark-img="front-pages/branding/logo_5-dark.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Logo slider: End -->
+        </section>
+        <!-- Real customers reviews: End -->
+
+        <!-- Our great team: Start -->
+        <section id="landingTeam" class="section-py landing-team">
+            <div class="container">
+                <div class="text-center mb-3 pb-1">
+                    <span class="badge bg-label-primary">Notre équipe d’orientation</span>
+                </div>
+                <h3 class="text-center mb-1"><span class="section-title">Soutenu</span> par de vraies visionnaires</h3>
+                <p class="text-center mb-md-5 pb-3">Qui se cache derrière ces système magnifiques ?</p>
+                <div class="row gy-5 mt-2">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card mt-3 mt-lg-0 shadow-none">
+                            <div class="bg-label-primary position-relative team-image-box">
+                                <img
+                                        src="{% static 'assets/img/front-pages/landing-page/1.png' %}"
+                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                        alt="human image"/>
+                            </div>
+                            <div class="card-body border border-top-0 border-label-primary text-center">
+                                <h5 class="card-title mb-0">Ruth Chansa</h5>
+                                <p class="text-muted mb-0">Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card mt-3 mt-lg-0 shadow-none">
+                            <div class="bg-label-info position-relative team-image-box">
+                                <img
+                                        src="{% static 'assets/img/front-pages/landing-page/2.png' %}"
+                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                        alt="human image"/>
+                            </div>
+                            <div class="card-body border border-top-0 border-label-info text-center">
+                                <h5 class="card-title mb-0">Abigäel Jennifer</h5>
+                                <p class="text-muted mb-0">Expert en Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card mt-3 mt-lg-0 shadow-none">
+                            <div class="bg-label-danger position-relative team-image-box">
+                                <img
+                                        src="{% static 'assets/img/front-pages/landing-page/3.png' %}"
+                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                        alt="human image"/>
+                            </div>
+                            <div class="card-body border border-top-0 border-label-danger text-center">
+                                <h5 class="card-title mb-0">Happy Lengwe</h5>
+                                <p class="text-muted mb-0">Specialiste en communication</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card mt-3 mt-lg-0 shadow-none">
+                            <div class="bg-label-success position-relative team-image-box">
+                                <img
+                                        src="{% static 'assets/img/front-pages/landing-page/4.png' %}"
+                                        class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl"
+                                        alt="human image"/>
+                            </div>
+                            <div class="card-body border border-top-0 border-label-success text-center">
+                                <h5 class="card-title mb-0">Shela Watkins</h5>
+                                <p class="text-muted mb-0">Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our great team: End -->
+
+        <!-- FAQ: Start -->
+        <section id="landingFAQ" class="section-py bg-body landing-faq">
+            <div class="container">
+                <div class="text-center mb-3 pb-1">
+                    <span class="badge bg-label-primary">FAQ</span>
+                </div>
+                <h3 class="text-center mb-1">Questions fréquemment <span class="section-title">posées</span></h3>
+                <p class="text-center mb-5 pb-3">Parcourez ces FAQ pour trouver des réponses aux questions couramment
+                    posées.</p>
+                <div class="row gy-5">
+                    <div class="col-lg-5">
+                        <div class="text-center">
+                            <img src="{% static 'assets/img/front-pages/landing-page/faq-boy-with-logos.png' %}"
+                                 alt="garçon avec des logos" class="faq-image"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card accordion-item active">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne" aria-expanded="true"
+                                            aria-controls="accordionOne">
+                                        Est-ce que vous facturez pour chaque mise à niveau ?
+                                    </button>
+                                </h2>
+
+                                <div id="accordionOne" class="accordion-collapse collapse show"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Bonbons au citron, gâteau au chocolat, bonbons gélifiés, gâteau aux carottes,
+                                        muffin. Snaps de sésame,
+                                        glaçage, massepain, oursons gélifiés, macaron, dragée, danoises, caramels en
+                                        poudre. Bear claw dragée
+                                        pâtisserie, garniture de soufflé. Gaufrette, oursons gélifiés, guimauve,
+                                        pâtisserie, tarte.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#accordionTwo" aria-expanded="false"
+                                            aria-controls="accordionTwo">
+                                        Est-ce que j'ai besoin d'acheter une licence pour chaque site web ?
+                                    </button>
+                                </h2>
+                                <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Dessert, crème glacée, beignet, gâteau à l'avoine, gelée, tarte aux prunes
+                                        sucrée, cheesecake. Bear claw dragée, avoine,
+                                        gâteau, tarte, macaron, beignet, bonbons gélifiés. Haricots de gelée, cannes en
+                                        sucre, gâteau aux carottes. Fruitcake,
+                                        chocolat, chupa chups.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#accordionThree" aria-expanded="false"
+                                            aria-controls="accordionThree">
+                                        Qu'est-ce qu'une licence régulière ?
+                                    </button>
+                                </h2>
+                                <div id="accordionThree" class="accordion-collapse collapse"
+                                     aria-labelledby="headingThree"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Une licence régulière peut être utilisée pour des produits finaux pour lesquels
+                                        les utilisateurs n'ont pas à payer pour l'accès ou
+                                        le service (l'accès est gratuit et il n'y aura pas de frais d'abonnement
+                                        mensuel). Une seule licence régulière peut être utilisée pour
+                                        un seul produit final et ce produit final peut être utilisé par vous ou votre
+                                        client. Si vous souhaitez vendre le produit final à plusieurs
+                                        clients, vous devrez acheter une licence séparée pour chaque client. La même
+                                        règle s'applique si vous souhaitez utiliser le même produit final
+                                        sur plusieurs domaines (configuration unique). Pour plus d'informations sur la
+                                        licence régulière, vous pouvez consulter la description officielle.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#accordionFour" aria-expanded="false"
+                                            aria-controls="accordionFour">
+                                        Qu'est-ce qu'une licence étendue ?
+                                    </button>
+                                </h2>
+                                <div id="accordionFour" class="accordion-collapse collapse"
+                                     aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et aliquid
+                                        quaerat
+                                        possimus maxime! Mollitia reprehenderit neque repellat deleniti delectus
+                                        architecto
+                                        dolorum maxime, blanditiis earum ea, incidunt quam possimus cumque.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#accordionFive" aria-expanded="false"
+                                            aria-controls="accordionFive">
+                                        Quelle licence s'applique aux applications SASS ?
+                                    </button>
+                                </h2>
+                                <div id="accordionFive" class="accordion-collapse collapse"
+                                     aria-labelledby="headingFive"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi molestias
+                                        exercitationem ab
+                                        cum nemo facere voluptates veritatis quia, eveniet veniam at et repudiandae
+                                        mollitia
+                                        ipsam quasi labore enim architecto non!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ: End -->
+
+        <hr class="m-0">
+
+        <!-- Contact Us: Start -->
+        <section id="landingContact" class="section-py bg-body landing-contact">
+            <div class="container">
+                <div class="text-center mb-3 pb-1">
+                    <span class="badge bg-label-primary">Contactez-nous</span>
+                </div>
+                <h3 class="text-center mb-1"><span class="section-title">Travaillons</span> ensemble</h3>
+                <p class="text-center mb-4 mb-lg-5 pb-md-3">Une question ou un commentaire ? Envoyez-nous un message</p>
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <div class="contact-img-box position-relative border p-2 h-100">
+                            <img src="{% static 'assets/img/front-pages/landing-page/contact-customer-service.png' %}"
+                                 alt="service client"
+                                 class="contact-img w-100 scaleX-n1-rtl"/>
+                            <div class="pt-3 px-4 pb-1">
+                                <div class="row gy-3 gx-md-4">
+                                    <div class="col-md-6 col-lg-12 col-xl-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge bg-label-primary rounded p-2 me-2"><i
+                                                    class="ti ti-mail ti-sm"></i></div>
+                                            <div>
+                                                <p class="mb-0">Email</p>
+                                                <h5 class="mb-0">
+                                                    <a href="mailto:atonixevo@gmail.com" class="text-heading">atonixevo@gmail.com</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-12 col-xl-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="badge bg-label-success rounded p-2 me-2">
+                                                <i class="ti ti-phone-call ti-sm"></i>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0">Téléphone</p>
+                                                <h5 class="mb-0"><a href="tel:+243-9717-69656" class="text-heading">+243
+                                                    9717 69656</a></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-1">Envoyer un message</h4>
+                                <p class="mb-4">
+                                    Si vous souhaitez discuter de tout ce qui concerne le paiement, le compte, la
+                                    licence,
+                                    les partenariats, ou si vous avez des questions pré-vente, vous êtes au bon endroit.
+                                </p>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="contact-form-fullname">Nom complet</label>
+                                            <input type="text" class="form-control" id="contact-form-fullname"
+                                                   placeholder="Ameno Neo"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="contact-form-email">Email</label>
+                                            <input type="text" id="contact-form-email" class="form-control"
+                                                   placeholder="amenoneo@gmail.com"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="contact-form-message">Message</label>
+                                            <textarea id="contact-form-message" class="form-control" rows="8"
+                                                      placeholder="Écrivez un message"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us: End -->
+    </div>
 
 {% endblock %}
