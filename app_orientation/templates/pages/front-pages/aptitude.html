@@ -6,75 +6,68 @@
 
     <div data-bs-spy="scroll" class="scrollspy-example">
 
-    <!-- Hero: Start -->
-    <section id="hero-animation">
-        <div id="landingHero" class="section-py landing-hero position-relative">
+        <!-- Hero: Start -->
+        <section id="hero-animation">
+            <div id="landingHero" class="section-py landing-hero position-relative">
+                <div class="container">
+                    <div class="hero-text-box text-center">
+                        <h1 class="text-primary hero-title display-6 fw-bold">Test d'aptitudes</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero: End -->
+
+        <section class="container py-5">
             <div class="container">
-                <div class="hero-text-box text-center">
-                    <h1 class="text-primary hero-title display-6 fw-bold">Bienvenue <br>sur notre <br>service d’orientation</h1>
+                <p class="lead text-center mb-4 pb-3">
+                    Le test d'aptitude est conçu pour aider les utilisateurs à évaluer leurs compétences et leurs
+                    capacités dans différents domaines, que ce soit sur le plan scolaire ou professionnel. Il permet
+                    d'identifier les forces et les faiblesses des individus afin de les orienter vers les domaines qui
+                    correspondent le mieux à leurs aptitudes.
+                </p>
+
+                <h3 class="text-center mb-1"><span class="section-title">Type de tests</span> d'aptitude</h3>
+                <br>
+
+                <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
+                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="#"><img src="{% static 'assets/img/front-pages/icons/test_psy.png' %}"
+                                             alt="laptop charging"></a>
+                        </div>
+                        <h5 class="mb-3">Test de raisonnement</h5>
+                        <p class="features-icon-description">
+                            Évalue les capacités de raisonnement logique et analytique.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="{% url 'comming_soon' %}"><img
+                                    src="{% static 'assets/img/front-pages/icons/recherche_emploi.png' %}"
+                                    alt="transition up"></a>
+                        </div>
+                        <h5 class="mb-3">Test de personnalité</h5>
+                        <p class="features-icon-description">
+                            Explore les traits de personnalité et les préférences comportementales.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                        <div class="text-center mb-3">
+                            <a href="{% url 'comming_soon' %}"><img
+                                    src="{% static 'assets/img/front-pages/icons/info_carrière.png' %}" alt="edit"></a>
+                        </div>
+                        <h5 class="mb-3">Test de compétences spécifiques à un domaine</h5>
+                        <p class="features-icon-description">
+                            Évalue les connaissances et les compétences dans des domaines spécifiques tels que les
+                            langues, les mathématiques, les sciences, etc.
+                        </p>
+                    </div>
                 </div>
+                
             </div>
-        </div>
-    </section>
-    <!-- Hero: End -->
-
-    <section class="container py-5">
-        <div class="container">
-            <p class="lead text-center mb-4 pb-3">
-                Notre service d’orientation est conçu pour vous aider à atteindre vos objectifs scolaires et professionnels. Nous offrons une variété de ressources et de services pour vous aider à évaluer vos intérêts et vos compétences, à rechercher des programmes d’études et des emplois, et à prendre des décisions éclairées sur votre avenir.
-            </p>
-
-            <h3 class="text-center mb-1"><span class="section-title">Processus </span>d’orientation</h3>
-            <p class="lead text-center mb-4 pb-3">
-                Notre processus d’orientation se déroule en plusieurs étapes, y compris une évaluation de vos intérêts et de vos compétences, une exploration de vos options d’études et de carrière, et un plan d’action personnalisé pour vous aider à atteindre vos objectifs. Nous travaillerons avec vous pour comprendre vos besoins uniques et vous fournir des conseils et des ressources adaptées à votre situation.
-            </p>
-
-            <h3 class="text-center mb-1"><span class="section-title">Ressources </span>d’orientation</h3>
-            <br>
-
-            <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
-                <div class="col-lg-3 col-sm-6 text-center features-icon-box">
-                    <div class="text-center mb-3">
-                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/test_psy.png' %}" alt="laptop charging"></a>
-                    </div>
-                    <h5 class="mb-3">Tests d’intérêts et de personnalité</h5>
-                    <p class="features-icon-description">
-                        Découvrez vos intérêts et votre personnalité grâce à nos tests spécialisés. Obtenez des insights précieux sur vous-même !
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 text-center features-icon-box">
-                    <div class="text-center mb-3">
-                        <a href="{% url 'comming_soon' %}"><img src="{% static 'assets/img/front-pages/icons/recherche_emploi.png' %}" alt="transition up"></a>
-                    </div>
-                    <h5 class="mb-3">Outils de recherche d’emploi</h5>
-                    <p class="features-icon-description">
-                        Accédez à nos outils avancés de recherche d'emploi pour trouver les meilleures opportunités correspondant à vos compétences et intérêts.
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 text-center features-icon-box">
-                    <div class="text-center mb-3">
-                        <a href="{% url 'comming_soon' %}"><img src="{% static 'assets/img/front-pages/icons/info_carrière.png' %}" alt="edit"></a>
-                    </div>
-                    <h5 class="mb-3">Informations sur les carrières</h5>
-                    <p class="features-icon-description">
-                        Explorez notre vaste collection d'informations sur les différentes carrières. Obtenez des conseils et des perspectives pour prendre des décisions éclairées.
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 text-center features-icon-box">
-                    <div class="text-center mb-3">
-                        <a href="#"><img src="{% static 'assets/img/front-pages/icons/guide_etude.png' %}" alt="3d select solid"></a>
-                    </div>
-                    <h5 class="mb-3">Guides d’études</h5>
-                    <p class="features-icon-description">
-                        Accédez à nos guides d'études complets pour vous aider à planifier et à réussir vos études. Des conseils pratiques et des ressources utiles vous attendent !
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
+        </section>
+    </div>
 {% endblock %}
