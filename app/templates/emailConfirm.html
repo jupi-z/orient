@@ -1,0 +1,7 @@
+{% autoescape off %}
+Bienvenu sur ruth
+Bonjour {{ name }}
+Confirmer votre adresse email en cliquant sur ce lien
+
+lien: https//{{ domain }}{% url 'activate' uid64=uid token=token %}
+{% endautoescape %}

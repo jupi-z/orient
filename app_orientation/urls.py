@@ -1,4 +1,5 @@
 from django.urls import path
+from . import views
 from app_orientation.views import (
     AccueilView,
     AboutView,
@@ -12,6 +13,9 @@ from app_orientation.views import (
     ServicesView,
     PricingView,
     CommingSoonView,
+    user_login,
+    auth_register_cover,
+
 )
 
 urlpatterns = [
@@ -25,6 +29,11 @@ urlpatterns = [
     path('creer_questionnaire/', CreerQuestionnaireView.as_view(), name='creer_questionnaire'),
     path('prediction/', PredictionView.as_view(), name='prediction'),
     path('services/', ServicesView.as_view(), name='services'),
+
     path('pricing/', PricingView.as_view(), name='pricing'),
     path('comming_soon/', CommingSoonView.as_view(), name='comming_soon'),
+    path('user_login/', user_login, name='user_login'),
+    path('auth-register-cover/', views.auth_register_cover, name='auth_register_cover'),
+
+
 ]

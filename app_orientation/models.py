@@ -1,25 +1,46 @@
 from django.db import models
 from django.contrib.postgres.fields import IntegerRangeField
+from django.contrib.auth.models import AbstractUser, Group, Permission
 
 
 class Test(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     duration = models.DurationField()
-    # Autres champs spécifiques à votre modèle Test
-    # ...
 
 
-class User(models.Model):
+class User(AbstractUser):
     email = models.EmailField(unique=True)
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+    username = models.CharField(max_length=150, unique=True)
+    firstname = models.CharField(max_length=150)
+    lastname = models.CharField(max_length=150)
+
+    # Ajoutez d'autres champs et méthodes personnalisés si nécessaire
+
+    def __str__(self):
+        return self.username
+
+    groups = models.ManyToManyField(
+        Group,
+        related_name='user_groups',
+        blank=True,
+        help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
+        verbose_name='groups',
+    )
+
+    user_permissions = models.ManyToManyField(
+        Permission,
+        related_name='user_user_permissions',
+        blank=True,
+        help_text='Specific permissions for this user.',
+        verbose_name='user permissions',
+    )
 
 
 PERSONALITY_TYPES = [
     ('type1', 'Type 1'),
     ('type2', 'Type 2'),
-    # Ajoute d'autres choix ici si nécessaire
+
 ]
 
 
@@ -28,8 +49,6 @@ class UserProfile(models.Model):
     birthdate = models.DateField()
     interests = models.TextField()
     personality = models.CharField(choices=PERSONALITY_TYPES, max_length=20)
-    # Autres champs de ton modèle UserProfile
-    # ...
 
 
 class Curriculum(models.Model):
@@ -38,7 +57,7 @@ class Curriculum(models.Model):
     duration = models.DurationField()
 
 
-class School(models.Model):
+class University(models.Model):
     name = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
     curriculums = models.ManyToManyField(Curriculum)
@@ -120,7 +139,6 @@ class Note(models.Model):
 
 
 class Questionnaire(models.Model):
-    # Définissez les champs de votre modèle ici
     nom = models.CharField(max_length=100)
     age = models.IntegerField()
     genre = models.CharField(max_length=100)
