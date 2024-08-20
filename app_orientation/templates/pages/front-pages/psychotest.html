@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div data-bs-spy="scroll" class="scrollspy-example">
+        <!-- Hero: Start -->
+        <section id="hero-animation">
+            <div id="landingHero" class="section-py landing-hero position-relative">
+                <div class="container">
+                    <div class="hero-text-box text-center">
+                        <h1 class="text-primary hero-title display-6 fw-bold">Test psychologique 🧠</h1>
+                        <h2>
+                            Découvrez votre personnalité, vos valeurs et vos motivations.<br
+                                class="d-none d-lg-block"/>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero: End -->
+        <section class="section-py landing-features">
+
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <form id="test-form">
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" class="form-control" id="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" class="form-control" id="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Âge :</label>
+                            <input type="number" class="form-control" id="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sexe">Sexe :</label>
+                            <select class="form-control" id="sexe" required>
+                                <option value="homme">Homme</option>
+                                <option value="femme">Femme</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="niveau_etude">Niveau d'études :</label>
+                            <select class="form-control" id="niveau_etude" required>
+                                <option value="primaire">Primaire</option>
+                                <option value="secondaire">Secondaire</option>
+                                <option value="superieur">Supérieur</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="profession">Profession :</label>
+                            <input type="text" class="form-control" id="profession" required>
+                        </div>
+
+                        <h2 class="mt-5">Questions du test :</h2>
+
+                        <div class="question" id="question-1">
+                            <p>1. Quelle est la première chose que vous remarquez chez une personne ?</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="reponse-1-a">
+                                        <input type="radio" name="question-1" id="reponse-1-a" value="a"> Son
+                                        apparence
+                                        physique
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-1-b">
+                                        <input type="radio" name="question-1" id="reponse-1-b" value="b"> Sa
+                                        personnalité
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-1-c">
+                                        <input type="radio" name="question-1" id="reponse-1-c" value="c"> Ses
+                                        compétences
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="question" id="question-2">
+                            <p>2. Que préférez-vous faire pendant votre temps libre ?</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="reponse-2-a">
+                                        <input type="radio" name="question-2" id="reponse-2-a" value="a"> Rester à
+                                        la
+                                        maison et me détendre
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-2-b">
+                                        <input type="radio" name="question-2" id="reponse-2-b" value="b"> Sortir et
+                                        rencontrer des gens
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-2-c">
+                                        <input type="radio" name="question-2" id="reponse-2-c" value="c"> Apprendre
+                                        de
+                                        nouvelles choses
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="question" id="question-3">
+                            <p>3. Quelle est votre plus grande peur ?</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="reponse-3-a">
+                                        <input type="radio" name="question-3" id="reponse-3-a" value="a"> L'échec
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-3-b">
+                                        <input type="radio" name="question-3" id="reponse-3-b" value="b"> La
+                                        solitude
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-3-c">
+                                        <input type="radio" name="question-3" id="reponse-3-c" value="c"> L'inconnu
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="question" id="question-4">
+                            <p>4. Quelle est votre plus grande force ?</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="reponse-4-a">
+                                        <input type="radio" name="question-4" id="reponse-4-a" value="a"> Ma
+                                        détermination
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-4-b">
+                                        <input type="radio" name="question-4" id="reponse-4-b" value="b"> Ma
+                                        créativité
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-4-c">
+                                        <input type="radio" name="question-4" id="reponse-4-c" value="c"> Mon
+                                        empathie
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="question" id="question-5">
+                            <p>5. Que recherchez-vous dans une relation amoureuse ?</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="reponse-5-a">
+                                        <input type="radio" name="question-5" id="reponse-5-a" value="a"> La passion
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-5-b">
+                                        <input type="radio" name="question-5" id="reponse-5-b" value="b"> La
+                                        stabilité
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="reponse-5-c">
+                                        <input type="radio" name="question-5" id="reponse-5-c" value="c"> La
+                                        complicité
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-5">Terminer le test</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div data-bs-spy="scroll" class="scrollspy-example">
+        <!-- Hero: Start -->
+        <section id="hero-animation">
+            <div id="landingHero" class="section-py landing-hero position-relative">
+                <div class="container">
+                    <div class="hero-text-box text-center">
+                        <h1 class="text-primary hero-title display-6 fw-bold">Outils de recommandation intelligent</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero: End -->
+
+        <section class="section-py landing-features">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <img src="{% static 'assets/img/front-pages/icons/PSYCO.png' %}" alt="test psycho"
+                                     width="65"/>
+                                <h5 class="card-title mt-3">Tests psychologiques 🧠</h5>
+                                <p class="card-text">Découvrez votre personnalité, vos valeurs et vos motivations.</p>
+                                <a href="{% url 'Psychotest' %}" class="btn btn-primary mt-3">Commencer le test</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <img src="{% static 'assets/img/front-pages/icons/COMPETENCES.png' %}"
+                                     alt="test compétences" width="65"/>
+                                <h5 class="card-title mt-3">Tests de compétences 🛠️</h5>
+                                <p class="card-text">Évaluez vos compétences dans différents domaines.</p>
+                                <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <img src="{% static 'assets/img/front-pages/icons/CONNAISSANCES.png' %}"
+                                     alt="test connaissances" width="65"/>
+                                <h5 class="card-title mt-3">Tests de connaissances 📚</h5>
+                                <p class="card-text">Testez vos connaissances dans différents sujets.</p>
+                                <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <img src="{% static 'assets/img/front-pages/icons/ORIENTATION.png' %}"
+                                     alt="test orientation" width="65"/>
+                                <h5 class="card-title mt-3">Test d'orientation 🧭</h5>
+                                <p class="card-text">Obtenez des recommandations personnalisées pour votre
+                                    orientation.</p>
+                                <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h2 class="text-center">Informations complémentaires sur les tests 📚</h2>
+                        <p>Les tests psychométriques sont des outils précieux pour l'évaluation des aptitudes, des
+                            compétences et des traits de personnalité. Ils sont utilisés dans divers contextes,
+                            notamment : </p>
+                        <ul>
+                            <li>Orientation professionnelle 🧭</li>
+                            <li>Sélection du personnel 💼</li>
+                            <li>Développement personnel 📈</li>
+                            <li>Recherche scientifique 🔬</li>
+                        </ul>
+                        <p>Il existe une grande variété de tests psychométriques, chacun ayant ses propres objectifs et
+                            méthodes. Certains tests sont conçus pour mesurer l'intelligence générale, tandis que
+                            d'autres se concentrent sur des compétences spécifiques, comme la résolution de problèmes ou
+                            la communication. Il est important de choisir le test approprié en fonction de l'objectif de
+                            l'évaluation.</p>
+                        <p>Les tests psychométriques sont généralement administrés par des professionnels qualifiés,
+                            tels que des psychologues ou des conseillers en orientation. L'interprétation des résultats
+                            des tests nécessite une expertise et une formation spécifiques. Il est important de ne pas
+                            interpréter les résultats des tests de manière isolée, mais de les considérer dans le
+                            contexte des autres informations disponibles sur la personne.</p>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h2 class="text-center">Conseils pour réussir les tests 🏆</h2>
+                        <p>Voici quelques conseils pour réussir les tests psychométriques :</p>
+                        <ul>
+                            <li>Préparez-vous bien à l'avance. Renseignez-vous sur le type de test que vous allez passer
+                                et sur les compétences qu'il mesure.
+                            </li>
+                            <li>Dormez suffisamment la nuit précédant le test.</li>
+                            <li>Arrivez à l'heure et détendu au centre de test.</li>
+                            <li>Lisez attentivement les instructions et posez des questions si vous ne comprenez pas
+                                quelque chose.
+                            </li>
+                            <li>Prenez votre temps et répondez aux questions avec soin.</li>
+                            <li>Ne vous inquiétez pas si vous ne connaissez pas la réponse à une question. Laissez-la de
+                                côté et revenez-y plus tard si vous avez le temps.
+                            </li>
+                            <li>Vérifiez vos réponses avant de soumettre le test.</li>
+                        </ul>
+                        <p>N'oubliez pas que les tests psychométriques ne sont qu'un outil d'évaluation. Ils ne mesurent
+                            pas toutes les compétences et tous les traits de personnalité. Si vous n'obtenez pas les
+                            résultats escomptés, ne vous découragez pas. Il existe de nombreuses autres façons de
+                            démontrer vos compétences et vos aptitudes.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+{% endblock %}

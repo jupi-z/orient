@@ -150,7 +150,7 @@ def user_login(request):
 class PredictionView(View):
     def get(self, request):
         form = VotreFormulaire()
-        return render(request, "pages/formulaire.html", {'form': form})
+        return render(request, "pages/front-pages/prediction-page.html", {'form': form})
 
     def post(self, request):
         form = VotreFormulaire(request.POST)
@@ -158,3 +158,9 @@ class PredictionView(View):
             data = form.cleaned_data
             predictions = VotreModele.predict([data['feature1'], data['feature2'], ...])
             return render(request, "resultat.html", {'predictions': predictions})
+
+
+class PsychotestView(View):
+    def get(self, request):
+        page_active = 'Psycho-test'
+        return render(request, "pages/front-pages/Psychotest.html", {'page_active': page_active})

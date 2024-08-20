@@ -15,6 +15,7 @@ from app_orientation.views import (
     CommingSoonView,
     user_login,
     auth_register_cover,
+    PsychotestView,
 
 )
 
@@ -31,9 +32,9 @@ urlpatterns = [
     path('services/', ServicesView.as_view(), name='services'),
 
     path('pricing/', PricingView.as_view(), name='pricing'),
+    path('Psychotest/', PsychotestView.as_view(), name='Psychotest'),
     path('comming_soon/', CommingSoonView.as_view(), name='comming_soon'),
     path('user_login/', user_login, name='user_login'),
     path('auth-register-cover/', views.auth_register_cover, name='auth_register_cover'),
-
 
 ]
