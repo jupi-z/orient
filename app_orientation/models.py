@@ -15,8 +15,6 @@ class User(AbstractUser):
     firstname = models.CharField(max_length=150)
     lastname = models.CharField(max_length=150)
 
-    # Ajoutez d'autres champs et méthodes personnalisés si nécessaire
-
     def __str__(self):
         return self.username
 
@@ -143,3 +141,41 @@ class Questionnaire(models.Model):
     age = models.IntegerField()
     genre = models.CharField(max_length=100)
     satisfaction = models.IntegerField()
+
+
+class Course(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+
+
+class Evaluation(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    score = models.FloatField()
+    feedback = models.TextField()
+
+
+class Cours(models.Model):
+    nom = models.CharField(max_length=100)
+    description = models.TextField()
+    credits = models.IntegerField()
+    professeur = models.ForeignKey('Professeur', on_delete=models.CASCADE, related_name='cours')
+
+
+class EvaluationConnaissance(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE)
+    cours = models.ForeignKey(Cours, on_delete=models.CASCADE)
+    matiere = models.CharField(max_length=100)
+    note = models.IntegerField()
+    date_evaluation = models.DateField()
+
+
+class Professeur(models.Model):
+    nom = models.CharField(max_length=255)
+    prenom = models.CharField(max_length=255)
+    email = models.EmailField(unique=True)
+    telephone = models.CharField(max_length=15)
+    specialite = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f"{self.nom} {self.prenom}"

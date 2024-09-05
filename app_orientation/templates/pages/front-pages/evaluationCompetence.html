@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évaluation des compétences</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin-top: 50px;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">Évaluation des compétences</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="course">Sélectionnez le cours :</label>
+            <select class="form-control" id="course" name="course">
+              <option value="">Choisissez un cours</option>
+              <option value="python">Python</option>
+              <option value="django">Django</option>
+              <option value="machine-learning">Machine Learning</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="student-name">Nom de l'étudiant :</label>
+            <input type="text" class="form-control" id="student-name" name="student-name" required>
+          </div>
+          <div class="form-group">
+            <label for="student-id">Numéro d'étudiant :</label>
+            <input type="text" class="form-control" id="student-id" name="student-id" required>
+          </div>
+          <div class="form-group">
+            <label for="assessment">Évaluation :</label>
+            <textarea class="form-control" id="assessment" name="assessment" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Soumettre</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -16,6 +16,8 @@ from app_orientation.views import (
     user_login,
     auth_register_cover,
     PsychotestView,
+    evaluationCompetenceView,
+    evaluation_connaissance
 
 )
 
@@ -36,5 +38,9 @@ urlpatterns = [
     path('comming_soon/', CommingSoonView.as_view(), name='comming_soon'),
     path('user_login/', user_login, name='user_login'),
     path('auth-register-cover/', views.auth_register_cover, name='auth_register_cover'),
+    path('evaluationCompetence/', evaluationCompetenceView, name='evaluationCompetence'),
+    path('evaluation-connaissance/<int:student_id>/<int:course_id>/', evaluation_connaissance,
+         name='evaluation_connaissance'),
 
 ]
+

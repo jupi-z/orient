@@ -1,3 +1,4 @@
+from django.db import models
 from django.shortcuts import render, redirect
 from django.views import View
 from app_orientation.forms import QuestionnaireForm, VotreFormulaire
@@ -11,8 +12,12 @@ from django.contrib.auth import authenticate, login as auth_login, logout
 from django.contrib import messages
 from django.core.mail import send_mail, EmailMessage
 import re
-from .models import User
+from .models import User, EvaluationConnaissance, Cours
 from .token import generatorToken
+from django.shortcuts import render, redirect
+from .models import Student, Course, Evaluation
+import numpy as np
+from sklearn.linear_model import LinearRegression
 
 
 class AccueilView(View):
@@ -149,14 +154,16 @@ def user_login(request):
 
 class PredictionView(View):
     def get(self, request):
-        form = VotreFormulaire()
+        student_id = 1
+        course_id = 2
+        form = evaluation_connaissance(request, student_id, course_id)
         return render(request, "pages/front-pages/prediction-page.html", {'form': form})
 
-    def post(self, request):
-        form = VotreFormulaire(request.POST)
+    def post(self, request, CS=None):
+        form = evaluation_connaissance(request.POST)
         if form.is_valid():
             data = form.cleaned_data
-            predictions = VotreModele.predict([data['feature1'], data['feature2'], ...])
+            predictions = CS.Bamus.csv.predict([data['feature1'], data['feature2'], ...])
             return render(request, "resultat.html", {'predictions': predictions})
 
 
@@ -164,3 +171,69 @@ class PsychotestView(View):
     def get(self, request):
         page_active = 'Psycho-test'
         return render(request, "pages/front-pages/Psychotest.html", {'page_active': page_active})
+
+
+def evaluationCompetenceView(request):
+    # Logique de votre vue pour la page d'évaluation des connaissances
+    return render(request, 'pages/front-pages/evaluationCompetence.html')
+
+
+def evaluate_student(request, student_id, course_id):
+    student = Student.objects.get(id=student_id)
+    course = Course.objects.get(id=course_id)
+    evaluations = Evaluation.objects.filter(student=student, course=course)
+
+    # Récupérer les données d'évaluation passées
+    X = []
+    y = []
+    for evaluation in evaluations:
+        X.append([evaluation.score])
+        y.append(evaluation.feedback)
+
+    # Entraîner un modèle de régression linéaire
+    model = LinearRegression()
+    model.fit(X, y)
+
+    # Évaluer les compétences de l'étudiant
+    new_score = float(request.POST['score'])
+    predicted_feedback = model.predict([[new_score]])
+
+    # Enregistrer la nouvelle évaluation
+    evaluation = Evaluation.objects.create(
+        student=student, course=course, score=new_score, feedback=predicted_feedback
+    )
+    evaluation.save()
+
+    return redirect('course_detail', course_id=course.id)
+
+
+def evaluation_connaissance(request, student_id, course_id):
+    if request.method == 'POST':
+        student = Student.objects.get(id=student_id)
+        course = Course.objects.get(id=course_id)
+        evaluations = EvaluationConnaissance.objects.filter(student=student, cours=course)
+
+        # Récupérer les données d'évaluation passées
+        X = []
+        y = []
+        for evaluation in evaluations:
+            X.append([evaluation.note])
+            y.append(evaluation.matiere)
+
+        # Entraîner un modèle de régression linéaire
+        model = LinearRegression()
+        model.fit(X, y)
+
+        # Évaluer les compétences de l'étudiant
+        new_note = float(request.POST['note'])
+        predicted_matiere = model.predict([[new_note]])
+
+        # Enregistrer la nouvelle évaluation
+        evaluation = EvaluationConnaissance.objects.create(
+            student=student, cours=course, note=new_note, matiere=predicted_matiere
+        )
+        evaluation.save()
+
+        return redirect('course_detail', course_id=course.id)
+    else:
+        return render(request, 'evaluationConnaissance.html', {'student_id': student_id, 'course_id': course_id})

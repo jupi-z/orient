@@ -17,55 +17,50 @@
 
         <section class="section-py landing-features">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <img src="{% static 'assets/img/front-pages/icons/PSYCO.png' %}" alt="test psycho"
-                                     width="65"/>
-                                <h5 class="card-title mt-3">Tests psychologiques 🧠</h5>
-                                <p class="card-text">Découvrez votre personnalité, vos valeurs et vos motivations.</p>
-                                <a href="{% url 'Psychotest' %}" class="btn btn-primary mt-3">Commencer le test</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <img src="{% static 'assets/img/front-pages/icons/COMPETENCES.png' %}"
-                                     alt="test compétences" width="65"/>
-                                <h5 class="card-title mt-3">Tests de compétences 🛠️</h5>
-                                <p class="card-text">Évaluez vos compétences dans différents domaines.</p>
-                                <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <img src="{% static 'assets/img/front-pages/icons/CONNAISSANCES.png' %}"
-                                     alt="test connaissances" width="65"/>
-                                <h5 class="card-title mt-3">Tests de connaissances 📚</h5>
-                                <p class="card-text">Testez vos connaissances dans différents sujets.</p>
-                                <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <img src="{% static 'assets/img/front-pages/icons/ORIENTATION.png' %}"
-                                     alt="test orientation" width="65"/>
-                                <h5 class="card-title mt-3">Test d'orientation 🧭</h5>
-                                <p class="card-text">Obtenez des recommandations personnalisées pour votre
-                                    orientation.</p>
-                                <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
-                            </div>
-                        </div>
-                    </div>
+         <div class="container">
+    <div class="row">
+        <div class="col-md-3 d-inline-block">
+            <div class="card text-center">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="{% static 'assets/img/front-pages/icons/PSYCO.png' %}" alt="test psycho" width="65" />
+                    <h5 class="card-title mt-3">Tests psychologiques 🧠</h5>
+                    <p class="card-text">Découvrez votre personnalité, vos valeurs et vos motivations.</p>
+                    <a href="{% url 'Psychotest' %}" class="btn btn-primary mt-3">Commencer le test</a>
                 </div>
-
+            </div>
+        </div>
+        <div class="col-md-3 d-inline-block">
+            <div class="card text-center">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="{% static 'assets/img/front-pages/icons/COMPETENCES.png' %}" alt="test compétences" width="65" />
+                    <h5 class="card-title mt-3">Tests de compétences 🛠️</h5>
+                    <p class="card-text">Évaluez vos compétences dans différents domaines.</p>
+                    <a href="{% url 'evaluationCompetence' %}" class="btn btn-primary mt-3">Commencer le test</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 d-inline-block">
+            <div class="card text-center">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="{% static 'assets/img/front-pages/icons/CONNAISSANCES.png' %}" alt="test connaissances" width="65" />
+                    <h5 class="card-title mt-3">Tests de connaissances 📚</h5>
+                    <p class="card-text">Testez vos connaissances dans différents sujets.</p>
+                    <a href="{% url 'evaluation_connaissance' %}" class="btn btn-primary mt-3">Commencer le test</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 d-inline-block">
+            <div class="card text-center">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <img src="{% static 'assets/img/front-pages/icons/ORIENTATION.png' %}" alt="test orientation" width="65" />
+                    <h5 class="card-title mt-3">Test d'orientation 🧭</h5>
+                    <p class="card-text">Obtenez des recommandations personnalisées pour votre orientation.</p>
+                    <a href="#" class="btn btn-primary mt-3">Commencer le test</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                 <div class="row mt-5">
                     <div class="col-md-12">
                         <h2 class="text-center">Informations complémentaires sur les tests 📚</h2>
